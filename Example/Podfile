@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ACYKit_Example' do
+  pod 'ACYKit', :path => '../'
+
+  target 'ACYKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  pod 'FBSnapshotTestCase'
+  end
+end
