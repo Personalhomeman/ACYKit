@@ -3,6 +3,12 @@ use_frameworks!
 target 'ACYKit_Example' do
   pod 'ACYKit', :path => '../'
 
+  pod 'CocoaLumberjack'
+  pod 'Masonry'
+  pod 'HexColors', '4.0.0' # 5.0.0 is written in Swift 3
+  pod 'SDWebImage'
+  pod 'MLeaksFinder'
+
   target 'ACYKit_Tests' do
     inherit! :search_paths
 
@@ -10,3 +16,8 @@ target 'ACYKit_Example' do
   pod 'FBSnapshotTestCase'
   end
 end
+
+
+#  pod 'FLAnimatedImage'
+#  pod 'PINRemoteImage'
+#  pod 'TAOverlay'
