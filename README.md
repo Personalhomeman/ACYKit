@@ -1,6 +1,6 @@
 # ACYKit
 
-[![CI Status](http://img.shields.io/travis/Arthur Liu/ACYKit.svg?style=flat)](https://travis-ci.org/Arthur Liu/ACYKit)
+[![Build Status](https://travis-ci.org/archmagees/ACYKit.svg?branch=master)](https://travis-ci.org/archmagees/ACYKit)
 [![Version](https://img.shields.io/cocoapods/v/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
 [![License](https://img.shields.io/cocoapods/l/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
 [![Platform](https://img.shields.io/cocoapods/p/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
@@ -22,7 +22,7 @@ pod "ACYKit"
 
 ## Author
 
-Arthur Liu, archmagees+work@gmail.com
+Arthur Liu, archmagees+cocoapods@gmail.com
 
 ## License
 

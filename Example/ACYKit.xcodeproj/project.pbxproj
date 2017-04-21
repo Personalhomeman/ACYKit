@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E28814CEC02ECA0DCE4ACF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3E28814CEC02ECA0DCE4ACF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5A1444FA1178275A12EEB005 /* Pods_ACYKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ACYKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACYKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +62,11 @@
 		6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ACYKit.podspec; path = ../ACYKit.podspec; sourceTree = "<group>"; };
+		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../ACYKit.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Arthur Liu";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = P82ZK576JR;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -524,6 +527,7 @@
 			baseConfigurationReference = 7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ACYKit/ACYKit-Prefix.pch";
 				INFOPLIST_FILE = "ACYKit/ACYKit-Info.plist";
@@ -539,6 +543,7 @@
 			baseConfigurationReference = 6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ACYKit/ACYKit-Prefix.pch";
 				INFOPLIST_FILE = "ACYKit/ACYKit-Info.plist";
