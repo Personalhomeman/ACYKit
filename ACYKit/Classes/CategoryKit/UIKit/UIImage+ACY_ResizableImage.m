@@ -7,32 +7,55 @@
 //
 
 #import "UIImage+ACY_ResizableImage.h"
+#import "ACYLogManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation UIImage (ACY_ResizableImage)
 
-+ (UIImage *)acy_resizableImageNamed:(NSString *)name {
++ (UIImage *)acy_resizableImageNamed:(NSString *)name
+						   capInsets:(UIEdgeInsets)capInsets {
 	
 	UIImage *image = [UIImage imageNamed:name];
 	
 	NSUInteger scale = [UIScreen mainScreen].scale;
 	
-	NSUInteger widthPixels = image.size.width * scale;
-	NSUInteger heightPixels = image.size.height * scale;
+	// failsafe
+	if (capInsets.left < 0 ||
+		capInsets.right < 0 ||
+		capInsets.top < 0 ||
+		capInsets.bottom < 0) {
+		
+		DDLogError(@"%s", __PRETTY_FUNCTION__);
+		DDLogWarn(@"resize image name:%@, capInsets should NOT less than 0\ncapInsets ===>%@",name, NSStringFromUIEdgeInsets(capInsets));
+		
+		return image;
+	}
 	
-	BOOL widthPixelsIsOdd = widthPixels % 2;
-	BOOL heightPixelsIsOdd = heightPixels % 2;
+	
+	capInsets.left = capInsets.left ?: 1;
+	capInsets.right = capInsets.right ?: 1;
+	capInsets.top = capInsets.top ?: 1;
+	capInsets.bottom = capInsets.bottom ?: 1;
 	
 	
+	if (capInsets.left + capInsets.right >= image.size.width ||
+		capInsets.top + capInsets.bottom >= image.size.height) {
+		
+		DDLogError(@"%s", __PRETTY_FUNCTION__);
+		DDLogWarn(@"resize image name:%@, capInsets should NOT larger than image size\ncapInsets ===>%@\nimage size===>%@",name, NSStringFromUIEdgeInsets(capInsets),@[@(image.size.width),@(image.size.height)]);
+		return image;
+	}
 	
-	UIEdgeInsets capInsets =
-	UIEdgeInsetsMake(image.size.height * 0.5,
-					 image.size.width * 0.5,
-					 image.size.height * 0.5,
-					 image.size.width * 0.5);
 	
-	return [image resizableImageWithCapInsets:capInsets];
+	CGFloat pixel = 1 / scale;
+	
+	// Get the insets right and bottom.
+	capInsets.right = image.size.width - (capInsets.left + pixel);
+	capInsets.bottom = image.size.height - (capInsets.top + pixel);
+	
+	return [image resizableImageWithCapInsets:capInsets
+								 resizingMode:UIImageResizingModeStretch];
 }
 
 @end

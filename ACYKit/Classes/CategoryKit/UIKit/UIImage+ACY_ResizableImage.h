@@ -12,7 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (ACY_ResizableImage)
 
-+ (UIImage *)acy_resizableImageNamed:(NSString *)name;
+
+/**
+ Resize a image with given image name. And the resizingMode is UIImageResizingModeStretch. Using this method will provide the fastest performance.
+
+ @param name The image name.
+ @return A resizable image according to UIImageResizingModeStretch.
+ */
++ (UIImage *)acy_resizableImageNamed:(NSString *)name
+						   capInsets:(UIEdgeInsets)capInsets;
 
 @end
 
