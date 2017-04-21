@@ -1,5 +1,5 @@
 app_identifier "org.cocoapods.demo.ACYKit-Example" # The bundle identifier of your app
-apple_id "archykit@gmail.com" # Your Apple email address
+apple_id "archmagees+dev@gmail.com" # Your Apple email address
 
 team_id "24VDZQY2WU" # Developer Portal Team ID
 

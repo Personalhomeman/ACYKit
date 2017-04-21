@@ -13,12 +13,24 @@ NS_ASSUME_NONNULL_BEGIN
 @implementation UIImage (ACY_ResizableImage)
 
 + (UIImage *)acy_resizableImageNamed:(NSString *)name {
+	
 	UIImage *image = [UIImage imageNamed:name];
 	
-	UIEdgeInsets capInsets = UIEdgeInsetsMake(image.size.height * 0.5,
-											  image.size.width * 0.5,
-											  image.size.height * 0.5,
-											  image.size.width * 0.5);
+	NSUInteger scale = [UIScreen mainScreen].scale;
+	
+	NSUInteger widthPixels = image.size.width * scale;
+	NSUInteger heightPixels = image.size.height * scale;
+	
+	BOOL widthPixelsIsOdd = widthPixels % 2;
+	BOOL heightPixelsIsOdd = heightPixels % 2;
+	
+	
+	
+	UIEdgeInsets capInsets =
+	UIEdgeInsetsMake(image.size.height * 0.5,
+					 image.size.width * 0.5,
+					 image.size.height * 0.5,
+					 image.size.width * 0.5);
 	
 	return [image resizableImageWithCapInsets:capInsets];
 }
