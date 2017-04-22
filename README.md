@@ -1,6 +1,7 @@
 # ACYKit
 
 [![Build Status](https://travis-ci.org/archmagees/ACYKit.svg?branch=master)](https://travis-ci.org/archmagees/ACYKit)
+[![Coverage Status](https://coveralls.io/repos/github/archmagees/ACYKit/badge.svg?branch=master)](https://coveralls.io/github/archmagees/ACYKit?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
 [![License](https://img.shields.io/cocoapods/l/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
 [![Platform](https://img.shields.io/cocoapods/p/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)

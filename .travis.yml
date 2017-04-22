@@ -17,3 +17,5 @@ script:
     - bundle exec fastlane test
     - cd ..
     - pod lib lint
+# don't remember to create the .slather.yml file. 
+after_success: slather

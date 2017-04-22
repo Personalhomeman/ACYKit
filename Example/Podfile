@@ -15,7 +15,7 @@ target 'ACYKit_Example' do
     inherit! :search_paths
 
     pod 'Kiwi'
-  pod 'FBSnapshotTestCase'
+#	pod 'FBSnapshotTestCase'
   end
 end
 
