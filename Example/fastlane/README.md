@@ -35,18 +35,16 @@ xcode-select --install
 fastlane ios test
 ```
 Runs all the tests
-### ios beta
+### ios code_coverage
 ```
-fastlane ios beta
+fastlane ios code_coverage
 ```
-Submit a new Beta Build to Apple TestFlight
-
-This will also make sure the profile is up to date
-### ios release
+Run slather to generate a code coverage report
+### ios test_in_travis
 ```
-fastlane ios release
+fastlane ios test_in_travis
 ```
-Deploy a new version to the App Store
+Run unit tests in travis-ci
 
 ----
 

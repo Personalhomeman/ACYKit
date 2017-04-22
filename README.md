@@ -12,6 +12,26 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+To use the pods, you need to install the [CocoaPods](http://cocoapods.org), the best way to install it is using [bundler](http://bundler.io). So run command in your command line:
+```shell
+$ cd YOUR_PROJECT_ROOT_DIR
+$ gem install bundler
+$ vim Gemfile
+```
+And add the following lines to Gemfile:
+```ruby
+source "https://gems.ruby-china.org/"
+gem "cocoapods"
+```
+*  If you are NOT in China, the first line is NOT needed!
+
+Save it, and run command:
+
+```shell
+$ bundle install
+```
+Now you can use [CocoaPods](http://cocoapods.org).
+
 ## Installation
 
 ACYKit is available through [CocoaPods](http://cocoapods.org). To install

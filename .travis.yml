@@ -9,13 +9,13 @@ cache:
     - bundler
     - cocoapods
 podfile: Example/Podfile
-before_install:
-    - bundle
+install:
+    - bundle install --without=documentation
     - bundle exec pod install --project-directory=Example
 script:
     - cd Example
-    - bundle exec fastlane test
+    - bundle exec fastlane test_in_travis
     - cd ..
     - pod lib lint
 # don't remember to create the .slather.yml file. 
-after_success: slather
+# after_success: slather

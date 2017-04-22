@@ -1,25 +1,24 @@
 #!/usr/bin/ruby
-# Customise this file, documentation can be found here:
-# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
-# All available actions: https://docs.fastlane.tools/actions
-# can also be listed using the `fastlane actions` command
 
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
+############################################################
+#====================***  IMPORTANT  ***====================
+# MODIFY THE CONSTANTS WHEN YOU IN THE NEW PROJECT. 
+# Just need to change these constants, after that you can use
+# the all lanes.
+SCHEME      = "ACYKit-Example"
+XCWORKSPACE = "ACYKit.xcworkspace"
+XCODEPROJ   = "ACYKit.xcodeproj"
+############################################################
 
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
 
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
 fastlane_version "2.28.2"
-
 default_platform :ios
+
 
 platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    cocoapods
+    # cocoapods
     
   end
 
@@ -28,36 +27,54 @@ platform :ios do
 #########################  TEST  ###########################
 ############################################################
   desc "Runs all the tests"
-  lane :test do
+  lane :test do |options|
+    env_ci = options[:env_ci]
+    travis = options[:travis]
     scan(
-      scheme: "ACYKit-Example",
+      scheme: "#{SCHEME}",
       devices: "iPhone 7",
       code_coverage: true
+    )
+    code_coverage(
+      env_ci: env_ci,
+      travis: travis
     )
   end
 
 
 
+############################################################
+#####################  CODE COVERAGE  ######################
+############################################################
 
-
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "ACYKit-Example") # Build your app - more options available
-    pilot
-
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
+  desc "Run slather to generate a code coverage report"
+  lane :code_coverage do |options|
+    env_ci    = options[:env_ci]
+    travis    = options[:travis]
+    slather(
+      coveralls: env_ci,
+      travis: travis,
+      show: !env_ci,
+      html: true,
+      output_directory: "./fastlane/test_output/code_coverage/",
+      scheme: "#{SCHEME}",
+      workspace: "#{XCWORKSPACE}",
+      proj: "#{XCODEPROJ}"
+    )
   end
 
-  desc "Deploy a new version to the App Store"
-  lane :release do
-    # match(type: "appstore")
-    # snapshot
-    gym(scheme: "ACYKit-Example") # Build your app - more options available
-    deliver(force: true)
-    # frameit
+
+############################################################
+#######################  TRAVIS-CI  ########################
+############################################################
+
+  desc "Run unit tests in travis-ci"
+  lane :test_in_travis do
+    cocoapods
+    test(
+      env_ci: true,
+      travis: true
+    )
   end
 
   # You can define as many lanes as you want
@@ -78,9 +95,3 @@ platform :ios do
   end
 end
 
-
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://docs.fastlane.tools/actions
-
-# fastlane reports which actions are used
-# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
