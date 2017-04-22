@@ -31,7 +31,7 @@ platform :ios do
   lane :test do
     scan(
       scheme: "ACYKit-Example",
-      devices: ["iPhone 7", "iPhone 7 Plus"]          
+      devices: ["iPhone 7", "iPhone 7s"]          
   end
 
 
