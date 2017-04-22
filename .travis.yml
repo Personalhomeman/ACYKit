@@ -18,4 +18,6 @@ script:
     - cd ..
     - pod lib lint
 # don't remember to create the .slather.yml file. 
-# after_success: slather
+after_success: 
+    # - slather
+    - bash <(curl -s https://codecov.io/bash) -f ./Example/fastlane/test_output/code_coverage/cobertura.xml

@@ -11,7 +11,7 @@ XCODEPROJ   = "ACYKit.xcodeproj"
 ############################################################
 
 
-fastlane_version "2.28.2"
+fastlane_version "2.28.3"
 default_platform :ios
 
 
@@ -20,6 +20,7 @@ platform :ios do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     # cocoapods
     
+  update_fastlane  
   end
 
 
@@ -52,9 +53,10 @@ platform :ios do
     env_ci    = options[:env_ci]
     travis    = options[:travis]
     slather(
-      coveralls: env_ci,
+      cobertura_xml: true,
+      # coveralls: env_ci,
       travis: travis,
-      show: !env_ci,
+      # show: !env_ci,
       html: true,
       output_directory: "./fastlane/test_output/code_coverage/",
       scheme: "#{SCHEME}",

@@ -1,10 +1,12 @@
+#source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 inhibit_all_warnings!
 
 
-
 target 'ACYKit_Example' do
+	
+	
   pod 'ACYKit', :path => '../'
 
   pod 'CocoaLumberjack'
@@ -15,13 +17,17 @@ target 'ACYKit_Example' do
 
   target 'ACYKit_Tests' do
     inherit! :search_paths
-
+	
     pod 'Kiwi'
 #	pod 'FBSnapshotTestCase'
   end
+  
 end
 
 
 #  pod 'FLAnimatedImage'
 #  pod 'PINRemoteImage'
 #  pod 'TAOverlay'
+
+#pod 'AFNetworking", :git => 'https://github.com/gowalla/AFNetworking.git', :branch => 'dev'
+#pod 'AFNetworking', :git => 'https://github.com/gowalla/AFNetworking.git', :commit => '082f8319af'

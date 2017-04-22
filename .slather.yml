@@ -1,7 +1,0 @@
-# .slather.yml
-
-
-coverage_service: coveralls
-# source_directory: Example/Pods/ACYKit
-xcodework: Example/ACYKit.xcworkspace
-scheme: ACYKit-Example
