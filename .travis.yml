@@ -16,8 +16,7 @@ script:
     - cd Example
     - bundle exec fastlane test_in_travis
     - cd ..
-    - pod lib lint
-# don't remember to create the .slather.yml file. 
+    - pod lib lint --quick
 after_success: 
-    # - slather
     - bash <(curl -s https://codecov.io/bash) -f ./Example/fastlane/test_output/code_coverage/cobertura.xml
+

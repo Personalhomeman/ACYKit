@@ -15,12 +15,12 @@
                                charactersCount:(NSUInteger)count; {
 	// 1.0 Check if count is larger than the length.
 	if (count >= self.length) {
-		DDLogError(@"%s, count should NOT larger than or equal to the string length!!!");
+		DDLogError(@"%s, count should NOT larger than or equal to the string length!!!",__PRETTY_FUNCTION__);
 		return @"";
 	}
 	
 	if (count <= 0) {
-		DDLogError(@"%s, count should NOT less than 0!!!");
+		DDLogError(@"%s, count should NOT less than 0!!!", __PRETTY_FUNCTION__);
 		return self;
 	}
 	

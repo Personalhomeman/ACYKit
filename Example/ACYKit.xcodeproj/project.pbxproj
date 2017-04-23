@@ -27,6 +27,8 @@
 		8EC2D4CC1EAA3E6E00FE0239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */; };
 		8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */; };
 		8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */; };
+		8EC2D4D71EACC2C600FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */; };
+		8EC2D4D91EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */; };
 		EAAF098EE5225096BD0C2875 /* Pods_ACYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACY_UIViewHierarchySpec.m"; sourceTree = "<group>"; };
 		8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ACY_UIViewSpec.m"; path = "Tests/UIKit/NSObject+ACY_UIViewSpec.m"; sourceTree = SOURCE_ROOT; };
+		8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ACY_ScrollIndicatorsSpec.m"; sourceTree = "<group>"; };
+		8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACY_ResizableImageSpec.m"; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */,
+				8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */,
+				8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */,
 			);
 			name = UIKit;
 			path = CategoryKit;
@@ -495,8 +501,10 @@
 				8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */,
 				8EC2D4B21EAA3A4600FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */,
 				8EC2D4B41EAA3A4D00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */,
+				8EC2D4D71EACC2C600FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */,
 				8EC2D4B31EAA3A4A00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */,
 				8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */,
+				8EC2D4D91EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
