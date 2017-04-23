@@ -25,6 +25,8 @@
 		8EC2D4C81EAA3E5700FE0239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4C71EAA3E5700FE0239 /* InfoPlist.strings */; };
 		8EC2D4CB1EAA3E6E00FE0239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */; };
 		8EC2D4CC1EAA3E6E00FE0239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */; };
+		8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */; };
+		8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */; };
 		EAAF098EE5225096BD0C2875 /* Pods_ACYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		8EC2D4C71EAA3E5700FE0239 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACY_UIViewHierarchySpec.m"; sourceTree = "<group>"; };
+		8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ACY_UIViewSpec.m"; path = "Tests/UIKit/NSObject+ACY_UIViewSpec.m"; sourceTree = SOURCE_ROOT; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				8EC2D4A91EAA392E00FE0239 /* CategoryKit */,
+				8EC2D4D41EAC7E5E00FE0239 /* UIKit */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -190,6 +195,7 @@
 				8EC2D4AA1EAA392E00FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */,
 				8EC2D4AB1EAA392E00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */,
 				8EC2D4AC1EAA392E00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */,
+				8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */,
 			);
 			path = CategoryKit;
 			sourceTree = "<group>";
@@ -264,6 +270,15 @@
 				8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		8EC2D4D41EAC7E5E00FE0239 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */,
+			);
+			name = UIKit;
+			path = CategoryKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,9 +492,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */,
 				8EC2D4B21EAA3A4600FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */,
 				8EC2D4B41EAA3A4D00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */,
 				8EC2D4B31EAA3A4A00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */,
+				8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -600,6 +618,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -608,6 +627,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -616,6 +636,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

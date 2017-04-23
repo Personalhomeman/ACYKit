@@ -16,52 +16,102 @@ describe(@"NSString+ACY_NSStringPathExtensions", ^{
 
     context(@"File path stitching", ^{
         //
-        __block NSString *basePath = @"";
-        __block NSString *appendString = @"";
+        NSString *basePath = @"file:///username/filesys/directory";
+		__block NSString *path = nil;
         
         beforeEach(^{
-            basePath = @"file:///username/filesys/directory";
-            appendString = @"";
+			path = nil;
         });
-        
+		
+		
+		it(@"append ", ^{
+			//
+			path = [basePath acy_stringByAppendingPathComponents:@[@"dir1", @"file"] extension:@".gif"];
+			
+			[[path should] equal:@"file:///username/filesys/directory/dir1/file.gif"];
+		});
+		
+		
         it(@"append a string with prefix /", ^{
             //
-            basePath = [basePath acy_stringByAppendingPathComponent:@"/prefixHasSlash"];
+            path = [basePath acy_stringByAppendingPathComponent:@"/prefixHasSlash"];
             
-            [[basePath should] equal:@"file:///username/filesys/directory/prefixHasSlash"];
+            [[path should] equal:@"file:///username/filesys/directory/prefixHasSlash"];
         });
         
         it(@"append a string with suffix /", ^{
             //
-            basePath = [basePath acy_stringByAppendingPathComponent:@"suffixHasSlash/"];
+            path = [basePath acy_stringByAppendingPathComponent:@"suffixHasSlash/"];
             
-            [[basePath should] equal:@"file:///username/filesys/directory/suffixHasSlash"];
+            [[path should] equal:@"file:///username/filesys/directory/suffixHasSlash"];
         });
         
         it(@"append a string without any /", ^{
             //
-            basePath = [basePath acy_stringByAppendingPathComponent:@"withoutAnySlash"];
-            [[basePath should] equal:@"file:///username/filesys/directory/withoutAnySlash"];
+            path = [basePath acy_stringByAppendingPathComponent:@"withoutAnySlash"];
+            [[path should] equal:@"file:///username/filesys/directory/withoutAnySlash"];
         });
         
         it(@"append a extension with JSON", ^{
             //
-            basePath = [basePath acy_stringByAppendingPathComponent:@"filename"];
-            basePath = [basePath acy_stringByAppendingPathExtension:@"JSON"];
+            path = [basePath acy_stringByAppendingPathComponent:@"filename"];
+            path = [path acy_stringByAppendingPathExtension:@"JSON"];
             
-            [[basePath should] equal:@"file:///username/filesys/directory/filename.JSON"];
+            [[path should] equal:@"file:///username/filesys/directory/filename.JSON"];
         });
         
         it(@"delete the extension of a file path", ^{
             NSString *extension = @"JSON";
-            basePath = [basePath acy_stringByAppendingPathComponent:@"file"];
-            basePath = [basePath acy_stringByAppendingPathExtension:extension];
+			
+            path = [basePath acy_stringByAppendingPathComponent:@"file"];
+            path = [path acy_stringByAppendingPathExtension:extension];
             
-            basePath = [basePath acy_stringByDeletingPathExtension];
+            path = [path acy_stringByDeletingPathExtension];
             
-            [[basePath should] equal:@"file:///username/filesys/directory/file"];
+            [[path should] equal:@"file:///username/filesys/directory/file"];
             
         });
+		
+		it(@"append a empty path component and extension", ^{
+			
+			path = [basePath acy_stringByAppendingPathComponent:@""];
+			
+			[[path should] equal:basePath];
+			
+			path = [path acy_stringByAppendingPathExtension:@""];
+			
+			[[path should] equal:basePath];
+			
+			
+			path = [basePath acy_stringByAppendingPathComponents:@[] extension:nil];
+			
+			[[path should] equal:basePath];
+			
+		});
+		
+		it(@"is a file path", ^{
+			
+			[basePath stub:@selector(acy_isLocalFilePath)
+				 andReturn:theValue(YES)];
+			
+			NSURL *URL = basePath.acy_URL;
+			
+			[[URL should] equal:[NSURL fileURLWithPath:basePath]];
+			
+		});
+		
+		it(@"is a URI path", ^{
+			
+			[basePath stub:@selector(acy_isLocalFilePath)
+				 andReturn:theValue(NO)];
+			
+			NSString *url = @"http://www.baidu.com";
+			
+			NSURL *URL = [url acy_URL];
+			
+			[[URL should] equal:[NSURL URLWithString:url]];
+			
+		});
         
     });
 

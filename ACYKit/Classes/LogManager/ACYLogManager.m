@@ -46,8 +46,7 @@
     [logger setForegroundColor:orangeDarkColor
                backgroundColor:nil
                        forFlag:DDLogFlagWarning];
-    
-    
+	
     DDLogVerbose(@"level verbose test");
     DDLogDebug(@"level debug test");
     DDLogInfo(@"level info test");

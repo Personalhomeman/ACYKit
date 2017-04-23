@@ -18,7 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
     
     DDAssert(action, @"action should not be nil");
     DDAssert(target, @"target should not be nil");
-    
+	
+	
+	
     
     // UIControl, including: button, etc.
     if ([self isKindOfClass:[UIControl class]]) {
@@ -31,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
     // UIView
     else if ([self isKindOfClass:[UIView class]]) {
         UIView *view = (UIView *)self;
+		
+		view.userInteractionEnabled = YES;
+		
         UITapGestureRecognizer *tap =
         [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
         

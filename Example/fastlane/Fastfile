@@ -8,6 +8,8 @@
 SCHEME      = "ACYKit-Example"
 XCWORKSPACE = "ACYKit.xcworkspace"
 XCODEPROJ   = "ACYKit.xcodeproj"
+
+PODSNAME    = "ACYKit"
 ############################################################
 
 
@@ -53,15 +55,19 @@ platform :ios do
     env_ci    = options[:env_ci]
     travis    = options[:travis]
     slather(
-      cobertura_xml: true,
-      # coveralls: env_ci,
+      cobertura_xml: env_ci,
+      html: !env_ci,
+      show: !env_ci,
       travis: travis,
-      # show: !env_ci,
-      html: true,
-      output_directory: "./fastlane/test_output/code_coverage/",
+      binary_basename: "#{PODSNAME}",
+      output_directory: "fastlane/test_output/code_coverage/",
       scheme: "#{SCHEME}",
       workspace: "#{XCWORKSPACE}",
-      proj: "#{XCODEPROJ}"
+      proj: "#{XCODEPROJ}",
+      ignore: [
+        "#{PODSNAME}",
+        "Pods/*"
+      ]
     )
   end
 

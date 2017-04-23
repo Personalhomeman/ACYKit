@@ -7,6 +7,7 @@
 //
 
 #import "NSString+ACY_NSStringExtensionMethods.h"
+#import "ACYLogManager.h"
 
 @implementation NSString (ACY_NSStringExtensionMethods)
 
@@ -14,8 +15,15 @@
                                charactersCount:(NSUInteger)count; {
 	// 1.0 Check if count is larger than the length.
 	if (count >= self.length) {
+		DDLogError(@"%s, count should NOT larger than or equal to the string length!!!");
 		return @"";
 	}
+	
+	if (count <= 0) {
+		DDLogError(@"%s, count should NOT less than 0!!!");
+		return self;
+	}
+	
 	
 	// 2.0 Create the range depends on the position and count.
 	NSRange range = NSMakeRange(0, 0);

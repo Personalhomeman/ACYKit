@@ -80,6 +80,10 @@ static NSString * const kDotSymbol = @".";
 		return self;
 	}
 	
+	if (!pathExtension.length) {
+		return self;
+	}
+	
 	
 	
 	NSString *path = [self copy];
