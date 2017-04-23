@@ -42,7 +42,7 @@ describe(@"UIView+ACY_UIViewHierarchy", ^{
 			[[theValue(pointInside) should] beNo];
 			
 			
-			[subview acy_expandTouchAreaToSize:CGSizeMake(130, 130)];
+			[subview acy_expandTouchAreaToSize:CGSizeMake(160, 160)];
 			pointInside =
 			[subview pointInside:touchPoint withEvent:nil];
 			
