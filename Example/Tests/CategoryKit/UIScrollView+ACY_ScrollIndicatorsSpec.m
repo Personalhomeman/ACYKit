@@ -17,6 +17,8 @@ describe(@"UIScrollView+ACY_ScrollIndicators", ^{
 
 	context(@"Need to always display the indicators", ^{
 		//
+		Class opaqueClass = NSClassFromString(@"ACYAlwaysOpaqueImageView");
+		
 		CGRect frame = CGRectMake(0, 0, 100, 100);
 
 		__block UIScrollView *sv = nil;
@@ -31,7 +33,8 @@ describe(@"UIScrollView+ACY_ScrollIndicators", ^{
 			[sv acy_alwaysShowHorizontalScrollIndicator:YES];
 			
 			// can not test by using code.
-//			[[[[sv.subviews lastObject] class] shouldNot] beMemberOfClass:[UIImageView class]];
+//			[[[[sv.subviews firstObject] class] should] beMemberOfClass:opaqueClass];
+			
 		});
 		
 		it(@"vertical direction", ^{
@@ -39,7 +42,7 @@ describe(@"UIScrollView+ACY_ScrollIndicators", ^{
 			[sv acy_alwaysShowVerticalScrollIndicator:YES];
 			
 			// can not test by using code.
-//			[[[sv.subviews lastObject] shouldNot] beMemberOfClass:[UIImageView class]];
+//			[[[[sv.subviews objectAtIndex:1] class] should] beMemberOfClass:opaqueClass];
 		
 		});
 		

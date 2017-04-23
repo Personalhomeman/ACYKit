@@ -1,16 +1,16 @@
 PODS:
-  - ACYKit (0.18.8):
-    - ACYKit/CategoryKit (= 0.18.8)
-    - ACYKit/Foundation (= 0.18.8)
-    - ACYKit/LogManager (= 0.18.8)
-    - ACYKit/UIKit (= 0.18.8)
-  - ACYKit/CategoryKit (0.18.8):
+  - ACYKit (0.18.9):
+    - ACYKit/CategoryKit (= 0.18.9)
+    - ACYKit/Foundation (= 0.18.9)
+    - ACYKit/LogManager (= 0.18.9)
+    - ACYKit/UIKit (= 0.18.9)
+  - ACYKit/CategoryKit (0.18.9):
     - ACYKit/Foundation
     - ACYKit/LogManager
-  - ACYKit/Foundation (0.18.8)
-  - ACYKit/LogManager (0.18.8):
+  - ACYKit/Foundation (0.18.9)
+  - ACYKit/LogManager (0.18.9):
     - CocoaLumberjack
-  - ACYKit/UIKit (0.18.8):
+  - ACYKit/UIKit (0.18.9):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - HexColors (= 4.0.0)
@@ -46,7 +46,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: a82a18eb809c80fafc98f5ad814eaea86f8b2150
+  ACYKit: 2d6a4a28bc2e43ed3a37b0ab2c1a4c676bc6f516
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379

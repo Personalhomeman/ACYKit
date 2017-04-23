@@ -15,9 +15,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6114F71EE74A373A655F6D84 /* Pods_ACYKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1444FA1178275A12EEB005 /* Pods_ACYKit_Tests.framework */; };
-		8EC2D4B21EAA3A4600FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4AA1EAA392E00FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */; };
-		8EC2D4B31EAA3A4A00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4AB1EAA392E00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */; };
-		8EC2D4B41EAA3A4D00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4AC1EAA392E00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */; };
 		8EC2D4C21EAA3E2200FE0239 /* ACYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4B81EAA3E2200FE0239 /* ACYAppDelegate.m */; };
 		8EC2D4C31EAA3E2200FE0239 /* ACYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4BB1EAA3E2200FE0239 /* ACYViewController.m */; };
 		8EC2D4C41EAA3E2200FE0239 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4BD1EAA3E2200FE0239 /* Images.xcassets */; };
@@ -25,10 +22,15 @@
 		8EC2D4C81EAA3E5700FE0239 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4C71EAA3E5700FE0239 /* InfoPlist.strings */; };
 		8EC2D4CB1EAA3E6E00FE0239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */; };
 		8EC2D4CC1EAA3E6E00FE0239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */; };
-		8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */; };
-		8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */; };
-		8EC2D4D71EACC2C600FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */; };
-		8EC2D4D91EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */; };
+		8EC2D4E91EACFA9700FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E11EACFA9700FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */; };
+		8EC2D4EA1EACFA9700FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E21EACFA9700FE0239 /* NSObject+ACY_UIViewSpec.m */; };
+		8EC2D4EB1EACFA9700FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E31EACFA9700FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */; };
+		8EC2D4EC1EACFA9700FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E41EACFA9700FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */; };
+		8EC2D4ED1EACFA9700FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E51EACFA9700FE0239 /* UIImage+ACY_ResizableImageSpec.m */; };
+		8EC2D4EE1EACFA9700FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E61EACFA9700FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */; };
+		8EC2D4EF1EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E71EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m */; };
+		8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */; };
+		8EC2D4F61EACFD7D00FE0239 /* ACYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */; };
 		EAAF098EE5225096BD0C2875 /* Pods_ACYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +60,6 @@
 		6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../ACYKit.podspec; sourceTree = "<group>"; };
-		8EC2D4AA1EAA392E00FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ACY_NSSortDescriptorSortingSpec.m"; sourceTree = "<group>"; };
-		8EC2D4AB1EAA392E00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACY_NSStringExtensionMethodsSpec.m"; sourceTree = "<group>"; };
-		8EC2D4AC1EAA392E00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACY_NSStringPathExtensionsSpec.m"; sourceTree = "<group>"; };
 		8EC2D4B71EAA3E2200FE0239 /* ACYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYAppDelegate.h; sourceTree = "<group>"; };
 		8EC2D4B81EAA3E2200FE0239 /* ACYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYAppDelegate.m; sourceTree = "<group>"; };
 		8EC2D4BA1EAA3E2200FE0239 /* ACYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYViewController.h; sourceTree = "<group>"; };
@@ -72,10 +71,17 @@
 		8EC2D4C71EAA3E5700FE0239 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EC2D4CA1EAA3E6E00FE0239 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACY_UIViewHierarchySpec.m"; sourceTree = "<group>"; };
-		8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ACY_UIViewSpec.m"; path = "Tests/UIKit/NSObject+ACY_UIViewSpec.m"; sourceTree = SOURCE_ROOT; };
-		8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ACY_ScrollIndicatorsSpec.m"; sourceTree = "<group>"; };
-		8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACY_ResizableImageSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E11EACFA9700FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ACY_NSSortDescriptorSortingSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E21EACFA9700FE0239 /* NSObject+ACY_UIViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ACY_UIViewSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E31EACFA9700FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACY_NSStringExtensionMethodsSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E41EACFA9700FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACY_NSStringPathExtensionsSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E51EACFA9700FE0239 /* UIImage+ACY_ResizableImageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACY_ResizableImageSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E61EACFA9700FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ACY_ScrollIndicatorsSpec.m"; sourceTree = "<group>"; };
+		8EC2D4E71EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACY_UIViewHierarchySpec.m"; sourceTree = "<group>"; };
+		8EC2D4F11EACFD6400FE0239 /* ACYMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYMasterViewController.h; sourceTree = "<group>"; };
+		8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYMasterViewController.m; sourceTree = "<group>"; };
+		8EC2D4F41EACFD7D00FE0239 /* ACYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYDetailViewController.h; sourceTree = "<group>"; };
+		8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYDetailViewController.m; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -155,7 +161,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8EC2D4A91EAA392E00FE0239 /* CategoryKit */,
+				8EC2D4E01EACFA9700FE0239 /* CategoryKit */,
 				8EC2D4D41EAC7E5E00FE0239 /* UIKit */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -193,17 +199,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8EC2D4A91EAA392E00FE0239 /* CategoryKit */ = {
-			isa = PBXGroup;
-			children = (
-				8EC2D4AA1EAA392E00FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */,
-				8EC2D4AB1EAA392E00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */,
-				8EC2D4AC1EAA392E00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */,
-				8EC2D4D01EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m */,
-			);
-			path = CategoryKit;
-			sourceTree = "<group>";
-		};
 		8EC2D4B51EAA3E2200FE0239 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +220,10 @@
 		8EC2D4B91EAA3E2200FE0239 /* SplitViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8EC2D4F11EACFD6400FE0239 /* ACYMasterViewController.h */,
+				8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */,
+				8EC2D4F41EACFD7D00FE0239 /* ACYDetailViewController.h */,
+				8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */,
 				8EC2D4BA1EAA3E2200FE0239 /* ACYViewController.h */,
 				8EC2D4BB1EAA3E2200FE0239 /* ACYViewController.m */,
 			);
@@ -234,8 +233,8 @@
 		8EC2D4BC1EAA3E2200FE0239 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8EC2D4CD1EAA3E7300FE0239 /* Storyboards */,
 				8EC2D4BD1EAA3E2200FE0239 /* Images.xcassets */,
+				8EC2D4CD1EAA3E7300FE0239 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -279,11 +278,22 @@
 		8EC2D4D41EAC7E5E00FE0239 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8EC2D4D21EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m */,
-				8EC2D4D51EACC2AB00FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */,
-				8EC2D4D81EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m */,
 			);
 			name = UIKit;
+			path = CategoryKit;
+			sourceTree = "<group>";
+		};
+		8EC2D4E01EACFA9700FE0239 /* CategoryKit */ = {
+			isa = PBXGroup;
+			children = (
+				8EC2D4E11EACFA9700FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m */,
+				8EC2D4E21EACFA9700FE0239 /* NSObject+ACY_UIViewSpec.m */,
+				8EC2D4E31EACFA9700FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m */,
+				8EC2D4E41EACFA9700FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m */,
+				8EC2D4E51EACFA9700FE0239 /* UIImage+ACY_ResizableImageSpec.m */,
+				8EC2D4E61EACFA9700FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m */,
+				8EC2D4E71EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m */,
+			);
 			path = CategoryKit;
 			sourceTree = "<group>";
 		};
@@ -488,8 +498,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */,
 				8EC2D4C31EAA3E2200FE0239 /* ACYViewController.m in Sources */,
 				8EC2D4C61EAA3E2200FE0239 /* main.m in Sources */,
+				8EC2D4F61EACFD7D00FE0239 /* ACYDetailViewController.m in Sources */,
 				8EC2D4C21EAA3E2200FE0239 /* ACYAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,13 +510,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC2D4D11EABD5EE00FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */,
-				8EC2D4B21EAA3A4600FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */,
-				8EC2D4B41EAA3A4D00FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */,
-				8EC2D4D71EACC2C600FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */,
-				8EC2D4B31EAA3A4A00FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */,
-				8EC2D4D31EAC7E5C00FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */,
-				8EC2D4D91EACC78100FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */,
+				8EC2D4ED1EACFA9700FE0239 /* UIImage+ACY_ResizableImageSpec.m in Sources */,
+				8EC2D4E91EACFA9700FE0239 /* NSArray+ACY_NSSortDescriptorSortingSpec.m in Sources */,
+				8EC2D4EB1EACFA9700FE0239 /* NSString+ACY_NSStringExtensionMethodsSpec.m in Sources */,
+				8EC2D4EE1EACFA9700FE0239 /* UIScrollView+ACY_ScrollIndicatorsSpec.m in Sources */,
+				8EC2D4EA1EACFA9700FE0239 /* NSObject+ACY_UIViewSpec.m in Sources */,
+				8EC2D4EF1EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */,
+				8EC2D4EC1EACFA9700FE0239 /* NSString+ACY_NSStringPathExtensionsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

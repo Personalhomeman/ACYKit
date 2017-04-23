@@ -15,6 +15,13 @@ SPEC_BEGIN(UIImage_ACY_ResizableImageSpec)
 describe(@"UIImage+ACY_ResizableImage", ^{
 
 	
+	context(@"Given an image assets ", ^{
+		//
+		it(@"should be used as a resizable image", ^{
+			//
+			
+		});
+	});
 });
 
 SPEC_END
