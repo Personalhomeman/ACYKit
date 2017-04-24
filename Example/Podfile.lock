@@ -1,16 +1,16 @@
 PODS:
-  - ACYKit (0.18.9):
-    - ACYKit/CategoryKit (= 0.18.9)
-    - ACYKit/Foundation (= 0.18.9)
-    - ACYKit/LogManager (= 0.18.9)
-    - ACYKit/UIKit (= 0.18.9)
-  - ACYKit/CategoryKit (0.18.9):
+  - ACYKit (0.18.10):
+    - ACYKit/CategoryKit (= 0.18.10)
+    - ACYKit/Foundation (= 0.18.10)
+    - ACYKit/LogManager (= 0.18.10)
+    - ACYKit/UIKit (= 0.18.10)
+  - ACYKit/CategoryKit (0.18.10):
     - ACYKit/Foundation
     - ACYKit/LogManager
-  - ACYKit/Foundation (0.18.9)
-  - ACYKit/LogManager (0.18.9):
+  - ACYKit/Foundation (0.18.10)
+  - ACYKit/LogManager (0.18.10):
     - CocoaLumberjack
-  - ACYKit/UIKit (0.18.9):
+  - ACYKit/UIKit (0.18.10):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - HexColors (= 4.0.0)
@@ -46,7 +46,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: 2d6a4a28bc2e43ed3a37b0ab2c1a4c676bc6f516
+  ACYKit: 8be1a0b6b451008e1495013fc06d2a2e340f2d6f
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
@@ -55,6 +55,6 @@ SPEC CHECKSUMS:
   MLeaksFinder: '0850e2f2abc7227adc4d4e2d1992b431264eb4d5'
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: f9e9dcd2d564e1da5dbbafd5d7379416597a0161
+PODFILE CHECKSUM: 819fbcf8e396a11da43c369af34cc8885025f7be
 
 COCOAPODS: 1.2.1

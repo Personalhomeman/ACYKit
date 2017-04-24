@@ -16,19 +16,26 @@
 
 @implementation ACYDetailViewController
 
+#pragma mark - Life Cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	
-	[self acy_setDisplayModeButtonItem];
-	
+    self.view.backgroundColor = [UIColor blueColor];
+    
 	[self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+}
+
+// Because I using the pod: MLeaksFinder, here is not a retain cycle.
+// The instance will not dealloc.
+- (BOOL)willDealloc {
+    return NO;
 }
 
 #pragma mark - Private Methods
 
 - (void)p_tickTack {
-	
+//    DDLogInfo(@"tick tack");
 }
 
 #pragma mark - Properties

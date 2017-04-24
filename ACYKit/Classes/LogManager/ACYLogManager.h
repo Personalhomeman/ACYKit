@@ -19,7 +19,7 @@
  * #import <ACYKit/ACYLogManager.h
  *
  * Step 3:
- * Add the method into AppDelegate.m -> -application:didFinishLaunchingWithOptions: .
+ * Add the method into `AppDelegate.m` -> `-application:didFinishLaunchingWithOptions:`.
  *
  * [ACYLogManager launch];
  *
@@ -45,6 +45,10 @@ static const DDLogLevel ddLogLevel = DDLogLevelError;
 ///======================================================================
 @interface ACYLogManager : NSObject
 
+
+/**
+ Launch method, invoke it in the method `-application:didFinishLaunchingWithOptions:` of `AppDelegate.m` file.
+ */
 + (void)launch;
 
 @end

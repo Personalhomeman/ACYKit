@@ -7,12 +7,17 @@
 //
 
 #import "ACYAppDelegate.h"
+#import "ACYSplitViewController.h"
 
 @implementation ACYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	[ACYLogManager launch];
+      
+    ACYSplitViewController *split = [[ACYSplitViewController alloc] init];
+    self.window = [UIWindow acy_makeKeyAndVisibleWithViewController:split];
+    
     return YES;
 }
 
