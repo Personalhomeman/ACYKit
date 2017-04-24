@@ -39,6 +39,16 @@
                ReferencedContainer = "container:ACYKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8EC2D4FA1EAE25A800FE0239"
+               BuildableName = "ACYKit_ExampleUITests.xctest"
+               BlueprintName = "ACYKit_ExampleUITests"
+               ReferencedContainer = "container:ACYKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

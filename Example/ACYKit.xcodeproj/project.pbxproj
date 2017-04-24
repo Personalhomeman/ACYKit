@@ -31,6 +31,7 @@
 		8EC2D4EF1EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4E71EACFA9700FE0239 /* UIView+ACY_UIViewHierarchySpec.m */; };
 		8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */; };
 		8EC2D4F61EACFD7D00FE0239 /* ACYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */; };
+		8EC2D4FE1EAE25A800FE0239 /* ACYKit_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */; };
 		EAAF098EE5225096BD0C2875 /* Pods_ACYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = ACYKit;
+		};
+		8EC2D5001EAE25A800FE0239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = ACYKit_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -83,6 +91,9 @@
 		8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYMasterViewController.m; sourceTree = "<group>"; };
 		8EC2D4F41EACFD7D00FE0239 /* ACYDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYDetailViewController.h; sourceTree = "<group>"; };
 		8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYDetailViewController.m; sourceTree = "<group>"; };
+		8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACYKit_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACYKit_ExampleUITests.m; sourceTree = "<group>"; };
+		8EC2D4FF1EAE25A800FE0239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -111,6 +122,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EC2D4F81EAE25A800FE0239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,6 +138,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for ACYKit */,
 				6003F5B5195388D20070C39A /* Tests */,
+				8EC2D4FC1EAE25A800FE0239 /* ACYKit_ExampleUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				6EBF34CDA8B11147267AA40D /* Pods */,
@@ -131,6 +150,7 @@
 			children = (
 				6003F58A195388D20070C39A /* ACYKit_Example.app */,
 				6003F5AE195388D20070C39A /* ACYKit_Tests.xctest */,
+				8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -291,6 +311,15 @@
 			path = CategoryKit;
 			sourceTree = "<group>";
 		};
+		8EC2D4FC1EAE25A800FE0239 /* ACYKit_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */,
+				8EC2D4FF1EAE25A800FE0239 /* Info.plist */,
+			);
+			path = ACYKit_ExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +364,24 @@
 			productReference = 6003F5AE195388D20070C39A /* ACYKit_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8EC2D4FA1EAE25A800FE0239 /* ACYKit_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC2D5021EAE25A800FE0239 /* Build configuration list for PBXNativeTarget "ACYKit_ExampleUITests" */;
+			buildPhases = (
+				8EC2D4F71EAE25A800FE0239 /* Sources */,
+				8EC2D4F81EAE25A800FE0239 /* Frameworks */,
+				8EC2D4F91EAE25A800FE0239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EC2D5011EAE25A800FE0239 /* PBXTargetDependency */,
+			);
+			name = ACYKit_ExampleUITests;
+			productName = ACYKit_ExampleUITests;
+			productReference = 8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,6 +396,13 @@
 						DevelopmentTeam = P82ZK576JR;
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = P82ZK576JR;
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					8EC2D4FA1EAE25A800FE0239 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = P82ZK576JR;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -368,6 +422,7 @@
 			targets = (
 				6003F589195388D20070C39A /* ACYKit_Example */,
 				6003F5AD195388D20070C39A /* ACYKit_Tests */,
+				8EC2D4FA1EAE25A800FE0239 /* ACYKit_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +443,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC2D4F91EAE25A800FE0239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +576,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EC2D4F71EAE25A800FE0239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC2D4FE1EAE25A800FE0239 /* ACYKit_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -521,6 +591,11 @@
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* ACYKit_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+		8EC2D5011EAE25A800FE0239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* ACYKit_Example */;
+			targetProxy = 8EC2D5001EAE25A800FE0239 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -663,6 +738,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P82ZK576JR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -688,6 +764,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P82ZK576JR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -700,6 +777,43 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACYKit_Example.app/ACYKit_Example";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		8EC2D5031EAE25A800FE0239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P82ZK576JR;
+				INFOPLIST_FILE = ACYKit_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods.demo.ACYKit-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ACYKit_Example;
+			};
+			name = Debug;
+		};
+		8EC2D5041EAE25A800FE0239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P82ZK576JR;
+				INFOPLIST_FILE = ACYKit_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods.demo.ACYKit-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ACYKit_Example;
 			};
 			name = Release;
 		};
@@ -732,6 +846,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8EC2D5021EAE25A800FE0239 /* Build configuration list for PBXNativeTarget "ACYKit_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC2D5031EAE25A800FE0239 /* Debug */,
+				8EC2D5041EAE25A800FE0239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
