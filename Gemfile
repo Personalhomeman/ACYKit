@@ -4,4 +4,3 @@ gem "cocoapods"
 gem "fastlane"
 gem "travis"
 gem "slather"
-gem "coveralls", require: false
