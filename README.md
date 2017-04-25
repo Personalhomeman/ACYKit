@@ -12,7 +12,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+platform: iOS 8.0
+
 To use the pods, you need to install the [CocoaPods](http://cocoapods.org), the best way to install it is using [bundler](http://bundler.io). So run command in your command line:
+
 ```shell
 $ cd YOUR_PROJECT_ROOT_DIR
 $ gem install bundler
