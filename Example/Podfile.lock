@@ -1,21 +1,23 @@
 PODS:
-  - ACYKit (0.18.11):
-    - ACYKit/CategoryKit (= 0.18.11)
-    - ACYKit/Foundation (= 0.18.11)
-    - ACYKit/LogManager (= 0.18.11)
-    - ACYKit/UIKit (= 0.18.11)
-  - ACYKit/CategoryKit (0.18.11):
+  - ACYKit (0.18.12):
+    - ACYKit/CategoryKit (= 0.18.12)
+    - ACYKit/Foundation (= 0.18.12)
+    - ACYKit/LogManager (= 0.18.12)
+    - ACYKit/UIKit (= 0.18.12)
+  - ACYKit/CategoryKit (0.18.12):
     - ACYKit/Foundation
     - ACYKit/LogManager
-  - ACYKit/Foundation (0.18.11)
-  - ACYKit/LogManager (0.18.11):
+  - ACYKit/Foundation (0.18.12)
+  - ACYKit/LogManager (0.18.12):
     - CocoaLumberjack
-  - ACYKit/UIKit (0.18.11):
+  - ACYKit/UIKit (0.18.12):
     - ACYKit/Foundation
     - ACYKit/LogManager
+    - Aspects
     - HexColors (= 4.0.0)
     - Masonry
     - SDWebImage
+  - Aspects (1.4.1)
   - CocoaLumberjack (3.1.0):
     - CocoaLumberjack/Default (= 3.1.0)
     - CocoaLumberjack/Extensions (= 3.1.0)
@@ -34,6 +36,7 @@ PODS:
 
 DEPENDENCIES:
   - ACYKit (from `../`)
+  - Aspects
   - CocoaLumberjack
   - HexColors (= 4.0.0)
   - Kiwi
@@ -46,7 +49,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: aa35e3d4d8391f0ab8269ef095da59b4fe7b8746
+  ACYKit: 8c93fe25c7cde86c5e3a017b5b600938c9314f02
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   HexColors: 5f95843ef89aff6a72e1fd3a8ebabf205cc43379
@@ -55,6 +59,6 @@ SPEC CHECKSUMS:
   MLeaksFinder: '0850e2f2abc7227adc4d4e2d1992b431264eb4d5'
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 819fbcf8e396a11da43c369af34cc8885025f7be
+PODFILE CHECKSUM: da1fcec27373aa0fe6f3fcb70dc8120e1ebabadf
 
 COCOAPODS: 1.2.1

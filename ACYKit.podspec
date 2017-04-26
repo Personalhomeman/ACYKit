@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ACYKit'
-  s.version          = '0.18.11'
+  s.version          = '0.18.12'
   s.summary          = 'A library to start a project quickly for iOS developers.'
   s.description      = <<-DESC
   A library to start a project quickly for iOS developers which is written by Objective-C.
@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
     ui.dependency 'ACYKit/LogManager'
     ui.dependency 'Masonry'
     ui.dependency 'SDWebImage'
+    ui.dependency 'Aspects'
     ui.dependency 'HexColors', "4.0.0"
   end
 

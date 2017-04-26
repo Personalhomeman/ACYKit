@@ -1,4 +1,4 @@
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
@@ -13,6 +13,7 @@ target 'ACYKit_Example' do
   pod 'HexColors', '4.0.0', :inhibit_warnings => true # 5.0.0 is written in Swift 3
   pod 'SDWebImage', :inhibit_warnings => true
   pod 'MLeaksFinder', :inhibit_warnings => true
+  pod 'Aspects'
 
   target 'ACYKit_Tests' do
     inherit! :search_paths
