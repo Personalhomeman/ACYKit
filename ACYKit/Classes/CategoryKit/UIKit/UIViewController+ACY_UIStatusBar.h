@@ -11,8 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
+
+
 /**
- Delete the all relative method about setting the `UIStatusBar` style and hidden property. And just set the `-acy_setPrefersStatusBarHidden:` in the class you want.
+ * Delete the all relative method about setting the `UIStatusBar` style and hidden property. And just set the `-acy_setPrefersStatusBarHidden:` in the class you want.
+ 
+ * Step 1
+ * Import the file into your .pch file.
+ * 
+ * Step 2
+ * Invoke the method in `-viewDidLoad` or `viewWillAppear` or any time of lefe cycle.
+ *
  */
 @interface UIViewController (ACY_UIStatusBar)
 

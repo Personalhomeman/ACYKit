@@ -30,11 +30,7 @@
     [super viewWillAppear:animated];
     
     [self acy_setPrefersStatusBarHidden:YES];
-    
-    
-    [self acy_setPrefersStatusBarHidden:NO
-                                  style:UIStatusBarStyleLightContent
-                              animation:UIStatusBarAnimationSlide];
+     
 }
 
 // Because I using the pod: MLeaksFinder, here is not a retain cycle.

@@ -92,69 +92,19 @@
         
     }];
     
-    
-    
-//    id<AspectToken> aspectHidden =
-//    [vc aspect_hookSelector:@selector(prefersStatusBarHidden) withOptions:AspectPositionInstead usingBlock:^(id<AspectInfo> info){
-//        
-//        
-//        BOOL prefersHidden = hidden;
-//        
-//        NSInvocation *invocation = info.originalInvocation;
-//        
-//        [invocation invoke];
-//        [invocation setReturnValue:&prefersHidden];
-//        
-//        
-//    } error:nil];
-//    
-//    
-//    
-//    
-//    id<AspectToken> aspectStyle =
-//    [vc aspect_hookSelector:@selector(preferredStatusBarStyle) withOptions:AspectPositionInstead usingBlock:^(id<AspectInfo> info){
-//        
-//        UIStatusBarStyle preferredStyle = style;
-//        
-//        NSInvocation *invocation = info.originalInvocation;
-//        
-//        [invocation invoke];
-//        [invocation setReturnValue:&preferredStyle];
-//        
-//    } error:nil];
-//    
-//    
-//    id<AspectToken> aspectAnimation =
-//    [vc aspect_hookSelector:@selector(preferredStatusBarUpdateAnimation) withOptions:AspectPositionInstead usingBlock:^(id<AspectInfo> info){
-//        
-//        UIStatusBarAnimation preferredAnimation = animation;
-//        
-//        NSInvocation *invocation = info.originalInvocation;
-//        
-//        [invocation invoke];
-//        
-//        [invocation setReturnValue:&preferredAnimation];
-//        
-//    } error:nil];
-    
-    
-    
-    
     [vc setNeedsStatusBarAppearanceUpdate];
     
     
     [aspectList enumerateObjectsUsingBlock:^(id<AspectToken>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj remove];
     }];
-    
-//    [aspectHidden remove];
-//    [aspectStyle remove];
-//    [aspectAnimation remove];
-    
+ 
 }
 
 
-
+- (UIViewController *)childViewControllerForStatusBarHidden {
+    return nil;
+}
 
 
 @end
