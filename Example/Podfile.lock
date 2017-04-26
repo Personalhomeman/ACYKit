@@ -1,19 +1,19 @@
 PODS:
-  - ACYKit (0.18.12):
-    - ACYKit/CategoryKit (= 0.18.12)
-    - ACYKit/Foundation (= 0.18.12)
-    - ACYKit/LogManager (= 0.18.12)
-    - ACYKit/UIKit (= 0.18.12)
-  - ACYKit/CategoryKit (0.18.12):
-    - ACYKit/Foundation
-    - ACYKit/LogManager
-  - ACYKit/Foundation (0.18.12)
-  - ACYKit/LogManager (0.18.12):
-    - CocoaLumberjack
-  - ACYKit/UIKit (0.18.12):
+  - ACYKit (0.18.13):
+    - ACYKit/CategoryKit (= 0.18.13)
+    - ACYKit/Foundation (= 0.18.13)
+    - ACYKit/LogManager (= 0.18.13)
+    - ACYKit/UIKit (= 0.18.13)
+  - ACYKit/CategoryKit (0.18.13):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - Aspects
+  - ACYKit/Foundation (0.18.13)
+  - ACYKit/LogManager (0.18.13):
+    - CocoaLumberjack
+  - ACYKit/UIKit (0.18.13):
+    - ACYKit/Foundation
+    - ACYKit/LogManager
     - HexColors (= 4.0.0)
     - Masonry
     - SDWebImage
@@ -49,7 +49,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: 8c93fe25c7cde86c5e3a017b5b600938c9314f02
+  ACYKit: a5275c610a38529b53764d1873b9ec5ca0c2ab2c
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 8311463ddf9ee86a06ef92a071dd656c89244500
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
