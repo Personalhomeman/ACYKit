@@ -21,9 +21,9 @@
 #define ACY_ONE_PIXEL_THICKNESS       (1.0 / [UIScreen mainScreen].scale)
 #define ACY_ONE_PIXEL_ADJUST_OFFSET   ((ACY_ONE_PIXEL_THICKNESS) / 2.0)
 
-/* size convension */
-#define ACY_WIDTH_CONVENSION(len)    ((ACY_SCREEN_WIDTH / ACY_IPHONE_4_7_INCH_WIDTH) * (len))
-#define ACY_HEIGHT_CONVENSION(len)   ((ACY_SCREEN_HEIGHT / ACY_IPHONE_4_7_INCH_HEIGHT) * (len))
+/* size CONVERSION */
+#define ACY_WIDTH_CONVERSION(len)    ((ACY_SCREEN_WIDTH / ACY_IPHONE_4_7_INCH_WIDTH) * (len))
+#define ACY_HEIGHT_CONVERSION(len)   ((ACY_SCREEN_HEIGHT / ACY_IPHONE_4_7_INCH_HEIGHT) * (len))
 
 
 
