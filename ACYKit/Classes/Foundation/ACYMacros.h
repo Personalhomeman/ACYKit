@@ -25,6 +25,10 @@ acy_keywordify \
 __strong __typeof__(self) self = self_weak_;
 
 
+/* convert class type */
+#define ACY_CLASS_CONVERSION(class,instance) (class *)(instance)
+
+
 
 // Real Singleton
 // If invoke this macro, you should declare a method: `+ (instancetype)sharedInstance;` in the .h file of the class, where you invoke the macro in the .m file.
