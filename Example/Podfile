@@ -16,6 +16,7 @@ target 'ACYKit_Example' do
   pod 'SDWebImage', :inhibit_warnings => true
   pod 'MLeaksFinder', :inhibit_warnings => true
   pod 'Aspects'
+  pod 'DateTools'
 
   target 'ACYKit_Tests' do
     inherit! :search_paths
