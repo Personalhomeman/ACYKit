@@ -33,6 +33,7 @@
 		8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F21EACFD6400FE0239 /* ACYMasterViewController.m */; };
 		8EC2D4F61EACFD7D00FE0239 /* ACYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4F51EACFD7D00FE0239 /* ACYDetailViewController.m */; };
 		8EC2D4FE1EAE25A800FE0239 /* ACYKit_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */; };
+		8EEB7B611ECD3E72004A7B25 /* ACYContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */; };
 		EAAF098EE5225096BD0C2875 /* Pods_ACYKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,8 @@
 		8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACYKit_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACYKit_ExampleUITests.m; sourceTree = "<group>"; };
 		8EC2D4FF1EAE25A800FE0239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYContainerView.h; path = SplitViewController/Views/ACYContainerView.h; sourceTree = "<group>"; };
+		8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYContainerView.m; path = SplitViewController/Views/ACYContainerView.m; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 			children = (
 				8EC2D4B61EAA3E2200FE0239 /* AppDelegate */,
 				8EC2D4B91EAA3E2200FE0239 /* SplitViewController */,
+				8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */,
+				8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEB7B611ECD3E72004A7B25 /* ACYContainerView.m in Sources */,
 				8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */,
 				8EC2D4C31EAA3E2200FE0239 /* ACYViewController.m in Sources */,
 				8EC2D4C61EAA3E2200FE0239 /* main.m in Sources */,

@@ -9,6 +9,7 @@
 #import "ACYDetailViewController.h"
 #import "ACYWatchdogTimer.h"
 #import <Masonry/Masonry.h>
+#import "ACYContainerView.h"
 
 @interface ACYDetailViewController ()
 
@@ -42,11 +43,23 @@
         make.edges.mas_equalTo(0);
     }];
     
+    ACYContainerView *view = [ACYContainerView new];
+    
+    [self.view addSubview:view];
+    
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+    
 //    [self p_testEnumeration];
     
     
 //    [self p_exchangeTwoObject];
-    [self p_testCountReference];
+//    [self p_testCountReference];
+//    self.obj = [NSObject new];
+//    DDLogInfo(@"self.obj:%@", self.obj);
+//    
+//    [self p_testPropertyAsParameter:self.obj];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -63,6 +76,16 @@
 }
 
 #pragma mark - Private Methods
+
+- (void)p_testPropertyAsParameter:(NSObject *)obj {
+    DDLogDebug(@"In the method ---");
+    DDLogInfo(@"obj in the method:%@",obj);
+    obj = nil;
+    DDLogWarn(@"obj is set to be nil");
+    DDLogInfo(@"obj after nil:%@",obj);
+    DDLogInfo(@"self.obj is now:%@",self.obj);
+    
+}
 
 -(void)p_exchangeTwoObject {
     NSObject *obj1 = [NSObject new];
