@@ -87,13 +87,13 @@
 
     // here width and height is after scale
     CGFloat w =
-    [self acy_displayPortrait] ?
-    targetSize.height :
+//    [self acy_displayPortrait] ?
+//    targetSize.height :
     targetSize.width;
     
     CGFloat h =
-    [self acy_displayPortrait] ?
-    targetSize.width :
+//    [self acy_displayPortrait] ?
+//    targetSize.width :
     targetSize.height;
     
     CGFloat x =
