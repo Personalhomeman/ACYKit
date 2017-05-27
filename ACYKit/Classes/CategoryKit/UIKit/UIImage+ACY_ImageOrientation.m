@@ -10,6 +10,37 @@
 
 @implementation UIImage (ACY_ImageOrientation)
 
+- (CGSize)acy_displaySize {
+    
+    CGSize size = self.size;
+    
+    return [self acy_displayPortrait] ?
+    CGSizeMake(size.height, size.width) :
+    size;
+    
+}
+
+
+/**
+ Get the data from real test. But I found that is not compatiable with the image property imageOrientatin. Still can not understand.
+
+ @return <#return value description#>
+ */
+- (BOOL)acy_displayPortrait {
+    
+    
+    switch (self.imageOrientation) {
+        case UIImageOrientationUp:
+        case UIImageOrientationDown:
+        case UIImageOrientationUpMirrored:
+        case UIImageOrientationDownMirrored: return YES;
+        case UIImageOrientationLeft:
+        case UIImageOrientationRight:
+        case UIImageOrientationLeftMirrored:
+        case UIImageOrientationRightMirrored: return NO;
+    }
+}
+
 - (CGAffineTransform)acy_transformByImageOrientation {
     
     CGAffineTransform transform = CGAffineTransformIdentity;

@@ -10,6 +10,8 @@
 
 @interface UIImage (ACY_ImageOrientation)
 
+- (CGSize)acy_displaySize;
+
 - (CGAffineTransform)acy_transformByImageOrientation;
 
 @end
