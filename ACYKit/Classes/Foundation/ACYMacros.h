@@ -64,3 +64,6 @@ static cls *sharedInstance = nil;                                   \
 }
 
 
+
+/* degrees to radians*/
+#define ACY_DegreesToRadians(degrees) ((degrees) * M_PI / 180)

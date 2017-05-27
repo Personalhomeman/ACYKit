@@ -7,6 +7,7 @@
 //
 
 #import "AVAssetTrack+ACY_UIImageOrientation.h"
+#import "ACYMacros.h"
 
 @implementation AVAssetTrack (ACY_UIImageOrientation)
 
@@ -74,6 +75,80 @@
             transform.b == b &&
             transform.c == c &&
             transform.d == d);
+}
+
+- (CGAffineTransform)acy_transformByFrame:(CGRect)frame {
+
+    CGSize naturalSize = self.naturalSize;
+    CGSize displaySize = self.acy_displaySize;
+    CGSize targetSize = frame.size;
+    
+    CGFloat scaleRatio = CGRectGetWidth(frame) / displaySize.width;
+
+    // here width and height is after scale
+    CGFloat w =
+    [self acy_displayPortrait] ?
+    targetSize.height :
+    targetSize.width;
+    
+    CGFloat h =
+    [self acy_displayPortrait] ?
+    targetSize.width :
+    targetSize.height;
+    
+    CGFloat x =
+    CGRectGetMinX(frame);
+    
+    CGFloat y =
+    CGRectGetMinY(frame);
+    
+    
+    
+    // this is different.
+    CGFloat angle = 0;
+    
+    CGPoint move = CGPointZero;
+    
+    switch (self.acy_imageOrientation) {
+        case UIImageOrientationUp:
+        case UIImageOrientationUpMirrored: {
+            angle = ACY_DegreesToRadians(90);
+            move = CGPointMake(x + w, y);
+            break;
+        }
+        case UIImageOrientationDown:
+        case UIImageOrientationDownMirrored: {
+            angle = ACY_DegreesToRadians(-90);
+            move = CGPointMake(x, y + h);
+            break;
+        }
+        case UIImageOrientationLeft:
+        case UIImageOrientationLeftMirrored: {
+            angle = ACY_DegreesToRadians(180);
+            move = CGPointMake(x + w, y+ h);
+            break;
+        }
+        case UIImageOrientationRight:
+        case UIImageOrientationRightMirrored: {
+            angle = ACY_DegreesToRadians(0);
+            move = CGPointMake(x, y);
+            break;
+        }
+    }
+    
+    // 1 scale -> move -> rotate
+    //
+    CGAffineTransform tranlsation =
+    CGAffineTransformTranslate(CGAffineTransformIdentity, move.x, move.y);
+    
+    
+    CGAffineTransform scale =
+    CGAffineTransformScale(tranlsation, scaleRatio, scaleRatio);
+    
+    CGAffineTransform rotation =
+    CGAffineTransformRotate(scale, angle);
+
+    return rotation;
 }
 
 - (CGRect)acy_cropRectangleByContentsRect:(CGRect)contentsRect {

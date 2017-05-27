@@ -14,6 +14,9 @@
 - (CGSize)acy_displaySize;
 - (UIImageOrientation)acy_imageOrientation;
 
+
+- (CGAffineTransform)acy_transformByFrame:(CGRect)frame;
+
 /**
  Return a correct rect for cropping method.
  
