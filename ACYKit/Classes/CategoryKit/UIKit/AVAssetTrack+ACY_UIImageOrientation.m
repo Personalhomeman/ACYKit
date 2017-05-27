@@ -79,7 +79,6 @@
 
 - (CGAffineTransform)acy_transformByFrame:(CGRect)frame {
 
-    CGSize naturalSize = self.naturalSize;
     CGSize displaySize = self.acy_displaySize;
     CGSize targetSize = frame.size;
     
@@ -87,13 +86,9 @@
 
     // here width and height is after scale
     CGFloat w =
-//    [self acy_displayPortrait] ?
-//    targetSize.height :
     targetSize.width;
     
     CGFloat h =
-//    [self acy_displayPortrait] ?
-//    targetSize.width :
     targetSize.height;
     
     CGFloat x =
