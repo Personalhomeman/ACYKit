@@ -84,6 +84,7 @@
     
     CGFloat scaleRatio = CGRectGetWidth(frame) / displaySize.width;
 
+//    NSLog(@"scale ratio in transform method: %@",@(scaleRatio));
     // here width and height is after scale
     CGFloat w =
     targetSize.width;

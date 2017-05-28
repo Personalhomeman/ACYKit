@@ -8,6 +8,7 @@ target 'ACYKit_Example' do
 	
 	
   pod 'ACYKit', :path => '../'
+#  pod 'ACYKit', :path => '~/Repositories/CocoaPods/ACYKit'
 
   pod 'CocoaLumberjack', :inhibit_warnings => true
   pod 'Masonry', :inhibit_warnings => true
