@@ -60,6 +60,7 @@
         NSDictionary *frameProperties = (__bridge NSDictionary *)cfFrameProperties;
         
         
+        CFRelease(cfFrameProperties);
 //        guard let gifProperties = framePrpoerties[kCGImagePropertyGIFDictionary as String] as? [String:AnyObject]
 //        else { return nil }
         NSDictionary *gifProperties =
@@ -119,6 +120,8 @@
         CGImageRef frame = CGImageSourceCreateImageAtIndex(src, i, nil);
         [framesArray addObject:(__bridge id)(frame)];
         
+        CGImageRelease(frame);
+        
         // Compile total loop time
         time = time + frameDuration;
 //        // Compile total loop time
@@ -166,6 +169,8 @@
 //    animation.calculationMode = kCAAnimationDiscrete
 //    
 //    return animation;
+    
+    CFRelease(src);
     
     // Create animation
     CAKeyframeAnimation* animation =
