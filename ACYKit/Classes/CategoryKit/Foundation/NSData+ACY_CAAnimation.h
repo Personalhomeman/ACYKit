@@ -15,11 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Create a animation for image to used in -[(CALayer *)layer addAnimation:forKey:];.
-
- @param contentsRect Same meaning in layer.contentsRect. It's range is [0, 1].
+ 
  @return A animation instance.
  */
-- (nullable CAKeyframeAnimation *)acy_GIFAnimationWithContentsRect:(CGRect)contentsRect;
+- (nullable CAKeyframeAnimation *)acy_GIFAnimation;
 
 @end
 
