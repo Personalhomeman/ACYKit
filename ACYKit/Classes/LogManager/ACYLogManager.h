@@ -16,7 +16,7 @@
  * Step 2:
  * Import the header in your Prefix.pch file:
  *
- * #import <ACYKit/ACYLogManager.h
+ * #import <ACYKit/ACYLogManager.h>
  *
  * Step 3:
  * Add the method into `AppDelegate.m` -> `-application:didFinishLaunchingWithOptions:`.
