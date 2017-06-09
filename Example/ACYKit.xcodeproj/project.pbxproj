@@ -55,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E28814CEC02ECA0DCE4ACF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3E28814CEC02ECA0DCE4ACF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		5A1444FA1178275A12EEB005 /* Pods_ACYKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ACYKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACYKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,9 +69,9 @@
 		64070828EF7F8BFBC483C4A9 /* Pods-ACYKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../ACYKit.podspec; sourceTree = "<group>"; };
-		8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYWatchdogTimer.h; path = ACYKit/Models/ACYWatchdogTimer.h; sourceTree = SOURCE_ROOT; };
-		8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYWatchdogTimer.m; path = ACYKit/Models/ACYWatchdogTimer.m; sourceTree = SOURCE_ROOT; };
+		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../../ACYKit.podspec; sourceTree = "<group>"; };
+		8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYWatchdogTimer.h; path = ACYWatchdogTimer.h; sourceTree = "<group>"; };
+		8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYWatchdogTimer.m; path = ACYWatchdogTimer.m; sourceTree = "<group>"; };
 		8E9A48751EAD95A600128878 /* ACYSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYSplitViewController.h; sourceTree = "<group>"; };
 		8E9A48761EAD95A600128878 /* ACYSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYSplitViewController.m; sourceTree = "<group>"; };
 		8EC2D4B71EAA3E2200FE0239 /* ACYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYAppDelegate.h; sourceTree = "<group>"; };
@@ -98,11 +98,11 @@
 		8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACYKit_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACYKit_ExampleUITests.m; sourceTree = "<group>"; };
 		8EC2D4FF1EAE25A800FE0239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYContainerView.h; path = SplitViewController/Views/ACYContainerView.h; sourceTree = "<group>"; };
-		8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYContainerView.m; path = SplitViewController/Views/ACYContainerView.m; sourceTree = "<group>"; };
+		8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYContainerView.h; path = ACYContainerView.h; sourceTree = "<group>"; };
+		8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYContainerView.m; path = ACYContainerView.m; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,7 @@
 				8EC2D4BE1EAA3E2200FE0239 /* Supporting Files */,
 			);
 			name = "Example for ACYKit";
-			path = ACYKit;
+			path = "Example for ACYKit";
 			sourceTree = "<group>";
 		};
 		6003F5B5195388D20070C39A /* Tests */ = {
@@ -204,6 +204,7 @@
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
@@ -214,6 +215,7 @@
 				3E28814CEC02ECA0DCE4ACF9 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			path = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		6EBF34CDA8B11147267AA40D /* Pods */ = {
@@ -234,7 +236,7 @@
 				8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */,
 			);
 			name = Models;
-			path = Modules;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8EC2D4B51EAA3E2200FE0239 /* Modules */ = {
@@ -298,6 +300,7 @@
 				8EC2D4CE1EAA3EC500FE0239 /* LaunchScreen */,
 			);
 			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8EC2D4CE1EAA3EC500FE0239 /* LaunchScreen */ = {
@@ -306,6 +309,7 @@
 				8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */,
 			);
 			name = LaunchScreen;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		8EC2D4D41EAC7E5E00FE0239 /* UIKit */ = {
@@ -313,7 +317,7 @@
 			children = (
 			);
 			name = UIKit;
-			path = CategoryKit;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		8EC2D4E01EACFA9700FE0239 /* CategoryKit */ = {
@@ -627,6 +631,7 @@
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -723,8 +728,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ACYKit/Supporting Files/ACYKit-Prefix.pch";
-				INFOPLIST_FILE = "ACYKit/Supporting Files/ACYKit-Info.plist";
+				GCC_PREFIX_HEADER = "Example for ACYKit/Supporting Files/ACYKit-Prefix.pch";
+				INFOPLIST_FILE = "Example for ACYKit/Supporting Files/ACYKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -742,8 +747,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P82ZK576JR;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ACYKit/Supporting Files/ACYKit-Prefix.pch";
-				INFOPLIST_FILE = "ACYKit/Supporting Files/ACYKit-Info.plist";
+				GCC_PREFIX_HEADER = "Example for ACYKit/Supporting Files/ACYKit-Prefix.pch";
+				INFOPLIST_FILE = "Example for ACYKit/Supporting Files/ACYKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -766,12 +771,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/Supporting Files/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INFOPLIST_FILE = "Tests/Supporting Files/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACYKit_Example.app/ACYKit_Example";
@@ -792,8 +797,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Tests/Supporting Files/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Supporting Files/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACYKit_Example.app/ACYKit_Example";

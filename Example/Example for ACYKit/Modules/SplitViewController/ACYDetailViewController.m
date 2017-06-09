@@ -28,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
     
@@ -66,11 +68,12 @@
     [super viewWillAppear:animated];
     
     [self acy_setPrefersStatusBarHidden:YES];
-     
+    
 }
 
-// Because I using the pod: MLeaksFinder, here is not a retain cycle.
+// Because I am using the pod: MLeaksFinder, here is not a retain cycle.
 // The instance will not dealloc.
+// !!!: But now it really exists a retain cycle, try to solve it later.
 - (BOOL)willDealloc {
     return NO;
 }
