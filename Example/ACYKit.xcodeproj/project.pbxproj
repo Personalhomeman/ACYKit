@@ -17,7 +17,6 @@
 		6114F71EE74A373A655F6D84 /* Pods_ACYKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1444FA1178275A12EEB005 /* Pods_ACYKit_Tests.framework */; };
 		8E0775ED1EC5602400C7DC1C /* ACYWatchdogTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */; };
 		8E9A48771EAD95A600128878 /* ACYSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A48761EAD95A600128878 /* ACYSplitViewController.m */; };
-		8EA46E601ED1784700607070 /* IMG_0006.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 8EA46E5F1ED1784700607070 /* IMG_0006.MOV */; };
 		8EC2D4C21EAA3E2200FE0239 /* ACYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4B81EAA3E2200FE0239 /* ACYAppDelegate.m */; };
 		8EC2D4C31EAA3E2200FE0239 /* ACYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4BB1EAA3E2200FE0239 /* ACYViewController.m */; };
 		8EC2D4C41EAA3E2200FE0239 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC2D4BD1EAA3E2200FE0239 /* Images.xcassets */; };
@@ -71,11 +70,10 @@
 		6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../../ACYKit.podspec; sourceTree = "<group>"; };
-		8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYWatchdogTimer.h; path = ACYWatchdogTimer.h; sourceTree = "<group>"; };
-		8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYWatchdogTimer.m; path = ACYWatchdogTimer.m; sourceTree = "<group>"; };
+		8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYWatchdogTimer.h; sourceTree = "<group>"; };
+		8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYWatchdogTimer.m; sourceTree = "<group>"; };
 		8E9A48751EAD95A600128878 /* ACYSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYSplitViewController.h; sourceTree = "<group>"; };
 		8E9A48761EAD95A600128878 /* ACYSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYSplitViewController.m; sourceTree = "<group>"; };
-		8EA46E5F1ED1784700607070 /* IMG_0006.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0006.MOV; sourceTree = "<group>"; };
 		8EC2D4B71EAA3E2200FE0239 /* ACYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYAppDelegate.h; sourceTree = "<group>"; };
 		8EC2D4B81EAA3E2200FE0239 /* ACYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYAppDelegate.m; sourceTree = "<group>"; };
 		8EC2D4BA1EAA3E2200FE0239 /* ACYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYViewController.h; sourceTree = "<group>"; };
@@ -100,8 +98,8 @@
 		8EC2D4FB1EAE25A800FE0239 /* ACYKit_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACYKit_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC2D4FD1EAE25A800FE0239 /* ACYKit_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACYKit_ExampleUITests.m; sourceTree = "<group>"; };
 		8EC2D4FF1EAE25A800FE0239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACYContainerView.h; path = ACYContainerView.h; sourceTree = "<group>"; };
-		8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACYContainerView.m; path = ACYContainerView.m; sourceTree = "<group>"; };
+		8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYContainerView.h; sourceTree = "<group>"; };
+		8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYContainerView.m; sourceTree = "<group>"; };
 		9FEEAB07CBD298D7CE59001B /* Pods_ACYKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACYKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7228D50A625B013AFCB1A2B /* Pods-ACYKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Tests/Pods-ACYKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D035D8353BF04281829AF473 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 				8EC2D4BC1EAA3E2200FE0239 /* Resources */,
 				8EC2D4BE1EAA3E2200FE0239 /* Supporting Files */,
 			);
-			name = "Example for ACYKit";
 			path = "Example for ACYKit";
 			sourceTree = "<group>";
 		};
@@ -205,7 +202,6 @@
 				6003F5B8195388D20070C39A /* InfoPlist.strings */,
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -216,7 +212,6 @@
 				D035D8353BF04281829AF473 /* README.md */,
 				3E28814CEC02ECA0DCE4ACF9 /* LICENSE */,
 			);
-			name = "Podspec Metadata";
 			path = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
@@ -237,7 +232,6 @@
 				8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */,
 				8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -288,7 +282,6 @@
 		8EC2D4BE1EAA3E2200FE0239 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8EA46E5F1ED1784700607070 /* IMG_0006.MOV */,
 				8EC2D4C01EAA3E2200FE0239 /* ACYKit-Prefix.pch */,
 				8EC2D4BF1EAA3E2200FE0239 /* ACYKit-Info.plist */,
 				8EC2D4C71EAA3E5700FE0239 /* InfoPlist.strings */,
@@ -302,7 +295,6 @@
 			children = (
 				8EC2D4CE1EAA3EC500FE0239 /* LaunchScreen */,
 			);
-			name = Storyboards;
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
@@ -311,7 +303,6 @@
 			children = (
 				8EC2D4C91EAA3E6E00FE0239 /* LaunchScreen.storyboard */,
 			);
-			name = LaunchScreen;
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
@@ -319,7 +310,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = UIKit;
 			path = UIKit;
 			sourceTree = "<group>";
 		};
@@ -460,7 +450,6 @@
 			files = (
 				8EC2D4CB1EAA3E6E00FE0239 /* LaunchScreen.storyboard in Resources */,
 				8EC2D4C41EAA3E2200FE0239 /* Images.xcassets in Resources */,
-				8EA46E601ED1784700607070 /* IMG_0006.MOV in Resources */,
 				8EC2D4C81EAA3E5700FE0239 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

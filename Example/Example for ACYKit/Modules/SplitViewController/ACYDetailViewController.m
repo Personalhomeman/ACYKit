@@ -75,12 +75,12 @@
     [self acy_setPrefersStatusBarHidden:YES];
     
 	
-	NSString *fileName = [NSString stringWithFormat:@"video%@.mp4",@(arc4random() % 1000)];
-	
-	NSString *path =
-	[NSHomeDirectory() stringByAppendingPathComponent:fileName];
-	
-	[self p_exportVideoTo:path];
+//	NSString *fileName = [NSString stringWithFormat:@"video%@.mp4",@(arc4random() % 1000)];
+//	
+//	NSString *path =
+//	[NSHomeDirectory() stringByAppendingPathComponent:fileName];
+//	
+//	[self p_exportVideoTo:path];
 }
 
 // Because I am using the pod: MLeaksFinder, here is not a retain cycle.
@@ -99,7 +99,8 @@
     DDLogWarn(@"obj is set to be nil");
     DDLogInfo(@"obj after nil:%@",obj);
     DDLogInfo(@"self.obj is now:%@",self.obj);
-    
+}
+
 - (void)p_exportVideoTo:(NSString *)savePath {
 	
 	// Add parent layer
@@ -107,7 +108,7 @@
 	parentLayer.frame = CGRectMake(0, 0, ACY_SCREEN_WIDTH, ACY_SCREEN_HEIGHT);
 	
 	
-	NSURL *URL = [[NSBundle mainBundle] URLForResource:@"IMG_0006.MOV" withExtension:nil];
+	NSURL *URL = [[NSBundle mainBundle] URLForResource:@"" withExtension:nil];
 	
 	AVAsset *firstVideoAsset = [AVAsset assetWithURL:URL];
 	AVAsset *secondVideoAsset = [AVAsset assetWithURL:URL];
