@@ -13,7 +13,7 @@ PODSNAME    = "ACYKit"
 ############################################################
 
 
-fastlane_version "2.28.8"
+fastlane_version "2.39.1"
 default_platform :ios
 
 
@@ -22,7 +22,7 @@ platform :ios do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     # cocoapods
     
-  update_fastlane  
+  # update_fastlane  
   end
 
 
