@@ -23,7 +23,6 @@ BOOL ACY_ABOVE_IOS_10_0;
     
     // Here the Cocoalumjack framework is not loaded, so use NSLog instead.
     NSLog(@"iOS version is %f",version);
-    
 }
 
 @end

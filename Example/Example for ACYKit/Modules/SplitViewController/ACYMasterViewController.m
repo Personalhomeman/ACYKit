@@ -9,6 +9,7 @@
 #import "ACYMasterViewController.h"
 #import "ACYDetailViewController.h"
 #import "ACYWatchdogTimer.h"
+#import "ACYReactiveCocoa.h"
 
 @interface ACYMasterViewController ()
 
@@ -33,6 +34,10 @@
     
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"cell"];
+    
+    ACYReactiveCocoa *rac = [ACYReactiveCocoa new];
+    
+    [rac operateSequence];
     
 //    [self p_testVariousTimer];
 }

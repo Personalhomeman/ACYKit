@@ -31,6 +31,13 @@ PODS:
   - Masonry (1.0.2)
   - MLeaksFinder (0.2.1):
     - FBRetainCycleDetector
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -44,6 +51,7 @@ DEPENDENCIES:
   - Kiwi
   - Masonry
   - MLeaksFinder
+  - ReactiveCocoa (= 2.5)
   - SDWebImage
 
 EXTERNAL SOURCES:
@@ -60,8 +68,9 @@ SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MLeaksFinder: '0850e2f2abc7227adc4d4e2d1992b431264eb4d5'
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 66d634eab11fbc44405cdefb950d4208bb5b17e7
+PODFILE CHECKSUM: 355a8836ebf09e05bca9b728de615e8a5947abdd
 
 COCOAPODS: 1.2.1

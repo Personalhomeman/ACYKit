@@ -15,6 +15,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6114F71EE74A373A655F6D84 /* Pods_ACYKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1444FA1178275A12EEB005 /* Pods_ACYKit_Tests.framework */; };
+		8E00D62B1EF36F8800822C4E /* ACYReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E00D62A1EF36F8800822C4E /* ACYReactiveCocoa.m */; };
 		8E0775ED1EC5602400C7DC1C /* ACYWatchdogTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */; };
 		8E9A48771EAD95A600128878 /* ACYSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A48761EAD95A600128878 /* ACYSplitViewController.m */; };
 		8EC2D4C21EAA3E2200FE0239 /* ACYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2D4B81EAA3E2200FE0239 /* ACYAppDelegate.m */; };
@@ -70,6 +71,8 @@
 		6881DD32F73B55C0DE29E962 /* Pods-ACYKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7ACAED35B1560EEB833947D6 /* Pods-ACYKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACYKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACYKit_Example/Pods-ACYKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		870CF0AA2FBC22A8ED5401B5 /* ACYKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ACYKit.podspec; path = ../../ACYKit.podspec; sourceTree = "<group>"; };
+		8E00D6291EF36F8800822C4E /* ACYReactiveCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYReactiveCocoa.h; sourceTree = "<group>"; };
+		8E00D62A1EF36F8800822C4E /* ACYReactiveCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYReactiveCocoa.m; sourceTree = "<group>"; };
 		8E0775EB1EC5602400C7DC1C /* ACYWatchdogTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYWatchdogTimer.h; sourceTree = "<group>"; };
 		8E0775EC1EC5602400C7DC1C /* ACYWatchdogTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACYWatchdogTimer.m; sourceTree = "<group>"; };
 		8E9A48751EAD95A600128878 /* ACYSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACYSplitViewController.h; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 			children = (
 				8EC2D4B51EAA3E2200FE0239 /* Modules */,
 				8E0775EE1EC5602700C7DC1C /* Models */,
+				8E00D6281EF36EC400822C4E /* Views */,
 				8EC2D4BC1EAA3E2200FE0239 /* Resources */,
 				8EC2D4BE1EAA3E2200FE0239 /* Supporting Files */,
 			);
@@ -226,6 +230,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8E00D6281EF36EC400822C4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */,
+				8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */,
+			);
+			name = Views;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8E00D62C1EF36F8A00822C4E /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				8E00D6291EF36F8800822C4E /* ACYReactiveCocoa.h */,
+				8E00D62A1EF36F8800822C4E /* ACYReactiveCocoa.m */,
+			);
+			name = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
 		8E0775EE1EC5602700C7DC1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,8 +263,7 @@
 			children = (
 				8EC2D4B61EAA3E2200FE0239 /* AppDelegate */,
 				8EC2D4B91EAA3E2200FE0239 /* SplitViewController */,
-				8EEB7B5F1ECD3E72004A7B25 /* ACYContainerView.h */,
-				8EEB7B601ECD3E72004A7B25 /* ACYContainerView.m */,
+				8E00D62C1EF36F8A00822C4E /* ReactiveCocoa */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -573,6 +595,7 @@
 				8EC2D4F31EACFD6400FE0239 /* ACYMasterViewController.m in Sources */,
 				8EC2D4C31EAA3E2200FE0239 /* ACYViewController.m in Sources */,
 				8EC2D4C61EAA3E2200FE0239 /* main.m in Sources */,
+				8E00D62B1EF36F8800822C4E /* ACYReactiveCocoa.m in Sources */,
 				8EC2D4F61EACFD7D00FE0239 /* ACYDetailViewController.m in Sources */,
 				8E0775ED1EC5602400C7DC1C /* ACYWatchdogTimer.m in Sources */,
 				8EC2D4C21EAA3E2200FE0239 /* ACYAppDelegate.m in Sources */,

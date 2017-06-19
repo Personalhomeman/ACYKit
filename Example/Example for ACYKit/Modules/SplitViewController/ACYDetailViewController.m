@@ -12,6 +12,7 @@
 #import "ACYContainerView.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import <WebKit/WebKit.h>
 
 @interface ACYDetailViewController ()
 
@@ -21,6 +22,8 @@
 @property (nonatomic, strong) CADisplayLink *timer;
 
 @property (nonatomic, strong) NSObject *obj;
+
+@property (nonatomic, strong) WKWebView *webView;
 
 @end
 
@@ -35,26 +38,36 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
     
-//	[self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
-    
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(p_handlePanGesture:)];
-    
-    [self.view addGestureRecognizer:pan];
-    
-    [self.view acy_addSubviews:@[self.panGestureView]];
+////	[self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 //    
-    [self.panGestureView mas_makeConstraints:^(MASConstraintMaker *make) {
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(p_handlePanGesture:)];
+//    
+//    [self.view addGestureRecognizer:pan];
+//    
+//    [self.view acy_addSubviews:@[self.panGestureView]];
+////    
+//    [self.panGestureView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(0);
+//    }];
+//    
+//    ACYContainerView *view = [ACYContainerView new];
+//    
+//    [self.view addSubview:view];
+//    
+//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(0);
+//    }];
+    
+    
+    
+    [self.view addSubview:self.webView];
+    
+    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
     
-    ACYContainerView *view = [ACYContainerView new];
     
-    [self.view addSubview:view];
-    
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(0);
-    }];
-    
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://172.1.8.8:8080/jsbridge/"]]];
 //    [self p_testEnumeration];
     
     
@@ -366,6 +379,15 @@
 		[_timer acy_setPreferredFramesPerSecond:1];
 	}
 	return _timer;
+}
+
+- (WKWebView *)webView {
+    if (!_webView) {
+        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+        
+        
+    }
+    return _webView;
 }
 
 

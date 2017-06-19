@@ -17,6 +17,7 @@ target 'ACYKit_Example' do
   pod 'MLeaksFinder', :inhibit_warnings => true
   pod 'Aspects'
   pod 'DateTools'
+  pod 'ReactiveCocoa', '2.5'
 
   target 'ACYKit_Tests' do
     inherit! :search_paths

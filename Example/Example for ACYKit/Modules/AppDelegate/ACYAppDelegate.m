@@ -18,6 +18,7 @@
     ACYSplitViewController *split = [[ACYSplitViewController alloc] init];
     self.window = [UIWindow acy_makeKeyAndVisibleWithViewController:split];
     
+    
     return YES;
 }
 
