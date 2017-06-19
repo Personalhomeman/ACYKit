@@ -1,17 +1,17 @@
 PODS:
-  - ACYKit (0.24.1):
-    - ACYKit/CategoryKit (= 0.24.1)
-    - ACYKit/Foundation (= 0.24.1)
-    - ACYKit/LogManager (= 0.24.1)
-    - ACYKit/UIKit (= 0.24.1)
-  - ACYKit/CategoryKit (0.24.1):
+  - ACYKit (0.24.2):
+    - ACYKit/CategoryKit (= 0.24.2)
+    - ACYKit/Foundation (= 0.24.2)
+    - ACYKit/LogManager (= 0.24.2)
+    - ACYKit/UIKit (= 0.24.2)
+  - ACYKit/CategoryKit (0.24.2):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - Aspects
-  - ACYKit/Foundation (0.24.1)
-  - ACYKit/LogManager (0.24.1):
+  - ACYKit/Foundation (0.24.2)
+  - ACYKit/LogManager (0.24.2):
     - CocoaLumberjack
-  - ACYKit/UIKit (0.24.1):
+  - ACYKit/UIKit (0.24.2):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - HexColors (= 4.0.0)
@@ -59,7 +59,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: e3ef1d636382dd0f8ec59ae72b5fd7662b590f86
+  ACYKit: ef8e13f06b895ce9d9f16b3eefab4044ebaba228
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
@@ -71,6 +71,6 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 355a8836ebf09e05bca9b728de615e8a5947abdd
+PODFILE CHECKSUM: 24ae7e72d5f9be7baf0b217c170eef8727703bf9
 
 COCOAPODS: 1.2.1
