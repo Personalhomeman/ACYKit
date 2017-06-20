@@ -1,17 +1,17 @@
 PODS:
-  - ACYKit (0.24.2):
-    - ACYKit/CategoryKit (= 0.24.2)
-    - ACYKit/Foundation (= 0.24.2)
-    - ACYKit/LogManager (= 0.24.2)
-    - ACYKit/UIKit (= 0.24.2)
-  - ACYKit/CategoryKit (0.24.2):
+  - ACYKit (0.25.0):
+    - ACYKit/CategoryKit (= 0.25.0)
+    - ACYKit/Foundation (= 0.25.0)
+    - ACYKit/LogManager (= 0.25.0)
+    - ACYKit/UIKit (= 0.25.0)
+  - ACYKit/CategoryKit (0.25.0):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - Aspects
-  - ACYKit/Foundation (0.24.2)
-  - ACYKit/LogManager (0.24.2):
+  - ACYKit/Foundation (0.25.0)
+  - ACYKit/LogManager (0.25.0):
     - CocoaLumberjack
-  - ACYKit/UIKit (0.24.2):
+  - ACYKit/UIKit (0.25.0):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - HexColors (= 4.0.0)
@@ -59,7 +59,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: ef8e13f06b895ce9d9f16b3eefab4044ebaba228
+  ACYKit: c726ae7861748be614dc76a45d1be05de15e1cf3
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf

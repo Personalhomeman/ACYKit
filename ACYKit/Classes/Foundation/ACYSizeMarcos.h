@@ -11,10 +11,11 @@
 // size
 #define ACY_SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 #define ACY_SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+#define ACY_SCREEN_SCALE        [UIScreen mainScreen].scale
 #define ACY_STATUS_BAR_HEIGHT   [UIApplication sharedApplication].statusBarFrame.size.height
 #define ACY_NAVI_BAR_HEIGHT     44.0f
 #define ACY_KEYBOARD_HEIGHT     216.0f
-#define ACY_SCREEN_SCALE        [UIScreen mainScreen].scale
+
 
 
 /* 1.0 Pixel*/
