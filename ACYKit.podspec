@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ACYKit'
-  s.version          = '0.25.0
-    git'
+  s.version          = '0.25.0'
   s.summary          = 'A library to start a project quickly for iOS developers.'
   s.description      = <<-DESC
   A library to start a project quickly for iOS developers which is written by Objective-C.
