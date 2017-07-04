@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong) WKWebView *webView;
 
+@property (nonatomic, strong) dispatch_queue_t queue;
+
 @end
 
 @implementation ACYDetailViewController
@@ -34,16 +36,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.queue = dispatch_queue_create("test async queue", NULL);
+    
+//    DISPATCH_CURRENT_QUEUE_LABEL;
+//    DISPATCH_QUEUE_CONCURRENT
+    
+    dispatch_async(self.queue, ^{
+        //
+        for (NSUInteger i = 0; i < 100; i++) {
+            DDLogVerbose(@"abc");
+        }
+        
+    });
+    
+    dispatch_sync(self.queue, ^{
+        //
+        for (NSUInteger i = 0; i < 100; i++) {
+            DDLogWarn(@"__sync__");
+        }
+    });
+    
+    
+    dispatch_async(self.queue, ^{
+        //
+        for (NSUInteger i = 0; i < 100; i++) {
+            DDLogInfo(@"   123456789");
+        }
+    });
     
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
+    
     
 ////	[self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 //    
 //    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(p_handlePanGesture:)];
 //    
 //    [self.view addGestureRecognizer:pan];
-//    
+//
 //    [self.view acy_addSubviews:@[self.panGestureView]];
 ////    
 //    [self.panGestureView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -60,24 +90,24 @@
     
     
     
-    [self.view addSubview:self.webView];
-    
-    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(0);
-    }];
-    
-    
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://172.1.8.8:8080/jsbridge/"]]];
-//    [self p_testEnumeration];
-    
-    
-//    [self p_exchangeTwoObject];
-//    [self p_testCountReference];
-//    self.obj = [NSObject new];
-//    DDLogInfo(@"self.obj:%@", self.obj);
+//    [self.view addSubview:self.webView];
 //    
-//    [self p_testPropertyAsParameter:self.obj];
-    [self p_testCountReference];
+//    [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(0);
+//    }];
+//    
+//    
+//    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://172.1.8.8:8080/jsbridge/"]]];
+////    [self p_testEnumeration];
+//    
+//    
+////    [self p_exchangeTwoObject];
+////    [self p_testCountReference];
+////    self.obj = [NSObject new];
+////    DDLogInfo(@"self.obj:%@", self.obj);
+////    
+////    [self p_testPropertyAsParameter:self.obj];
+//    [self p_testCountReference];
 	
 	
 }
