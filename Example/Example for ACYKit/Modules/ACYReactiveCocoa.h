@@ -10,6 +10,7 @@
 
 @interface ACYReactiveCocoa : NSObject
 
+- (void)createSignal;
 - (void)operateSequence;
 
 @end

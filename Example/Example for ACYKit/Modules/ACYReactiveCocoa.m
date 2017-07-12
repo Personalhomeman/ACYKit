@@ -10,6 +10,10 @@
 
 @implementation ACYReactiveCocoa
 
+- (void)createSignal {
+	
+}
+
 - (void)operateSequence {
     NSArray *array = @[@(2), @(5), @(7), @(15)];
     
