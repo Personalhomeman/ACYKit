@@ -44,6 +44,12 @@ it, simply add the following line to your Podfile:
 pod "ACYKit"
 ```
 
+If you just want to use some sub pods, you can add lines like this:
+
+```ruby
+pod 'ACYKit', :subspecs => ['LogManager', 'Foundation'], :git => 'git@github.com:archmagees/ACYKit.git
+```
+
 ## Author
 
 Arthur Liu, archmagees+cocoapods@gmail.com

@@ -36,33 +36,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.queue = dispatch_queue_create("test async queue", NULL);
     
-//    DISPATCH_CURRENT_QUEUE_LABEL;
-//    DISPATCH_QUEUE_CONCURRENT
-    
-    dispatch_async(self.queue, ^{
-        //
-        for (NSUInteger i = 0; i < 100; i++) {
-            DDLogVerbose(@"abc");
-        }
-        
-    });
-    
-    dispatch_sync(self.queue, ^{
-        //
-        for (NSUInteger i = 0; i < 100; i++) {
-            DDLogWarn(@"__sync__");
-        }
-    });
+    self.navigationController.navigationBar.hidden = YES;
     
     
-    dispatch_async(self.queue, ^{
-        //
-        for (NSUInteger i = 0; i < 100; i++) {
-            DDLogInfo(@"   123456789");
-        }
-    });
+//    self.queue = dispatch_queue_create("test async queue", NULL);
+//    
+////    DISPATCH_CURRENT_QUEUE_LABEL;
+////    DISPATCH_QUEUE_CONCURRENT
+//    
+//    dispatch_async(self.queue, ^{
+//        //
+//        for (NSUInteger i = 0; i < 100; i++) {
+//            DDLogVerbose(@"abc");
+//        }
+//        
+//    });
+//    
+//    dispatch_sync(self.queue, ^{
+//        //
+//        for (NSUInteger i = 0; i < 100; i++) {
+//            DDLogWarn(@"__sync__");
+//        }
+//    });
+//    
+//    
+//    dispatch_async(self.queue, ^{
+//        //
+//        for (NSUInteger i = 0; i < 100; i++) {
+//            DDLogInfo(@"   123456789");
+//        }
+//    });
     
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
@@ -115,7 +119,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self acy_setPrefersStatusBarHidden:YES];
+//    [self acy_setPrefersStatusBarHidden:YES];
     
 	
 //	NSString *fileName = [NSString stringWithFormat:@"video%@.mp4",@(arc4random() % 1000)];
