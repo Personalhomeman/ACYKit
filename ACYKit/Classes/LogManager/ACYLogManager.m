@@ -6,7 +6,9 @@
 //
 //
 
+@import ChameleonFramework;
 #import "ACYLogManager.h"
+
 
 #define acy_hsb(h,s,b) [UIColor colorWithHue:h/360.0f saturation:s/100.0f brightness:b/100.0f alpha:1.0]
 
@@ -25,10 +27,14 @@
     [logger setColorsEnabled:YES];
 	
 	// flatGreenColorDark
-    UIColor *greenColor      = acy_hsb(145, 78, 68);
-    UIColor *pinkColor       = acy_hsb(324, 49, 96);
-    UIColor *orangeColor     = acy_hsb(28, 85, 90);
-    UIColor *orangeDarkColor = acy_hsb(24, 100, 83);
+    UIColor *greenColor      = FlatGreen;
+    acy_hsb(145, 78, 68);
+    UIColor *pinkColor       = FlatPink;
+    acy_hsb(324, 49, 96);
+    UIColor *orangeColor     = FlatOrange;
+    acy_hsb(28, 85, 90);
+    UIColor *orangeDarkColor = FlatOrangeDark;
+    acy_hsb(24, 100, 83);
     
     
     [logger setForegroundColor:greenColor

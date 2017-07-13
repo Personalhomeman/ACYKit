@@ -12,7 +12,8 @@ target 'ACYKit_Example' do
 
   pod 'CocoaLumberjack', :inhibit_warnings => true
   pod 'Masonry', :inhibit_warnings => true
-  pod 'HexColors', '4.0.0', :inhibit_warnings => true # 5.0.0 is written in Swift 3
+#  pod 'HexColors', '4.0.0', :inhibit_warnings => true # 5.0.0 is written in Swift 3
+  pod 'ChameleonFramework'
   pod 'SDWebImage', :inhibit_warnings => true
   pod 'MLeaksFinder', :inhibit_warnings => true
   pod 'Aspects'
