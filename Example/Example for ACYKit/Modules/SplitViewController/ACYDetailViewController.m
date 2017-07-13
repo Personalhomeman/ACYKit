@@ -71,6 +71,13 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blueColor];
     
+    UIImage *image = [UIImage acy_imageWithColors:@[rgb(145.0, 110.0, 204.0),
+                                                    rgb(242.0, 13.0, 170.0)] size:CGSizeMake(200, 100) gradientStyle:ACYGradientStyleLeftToRight];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(0, 0, 200, 100);
+    
+    [self.view addSubview:imageView];
     
 ////	[self.timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 //    
