@@ -81,7 +81,6 @@
     CGContextRestoreGState(context);
     CGColorSpaceRelease(colorSpace);
     CGGradientRelease(gradient);
-    CFRelease(<#CFTypeRef cf#>)
     
     UIGraphicsEndImageContext();
     
