@@ -16,9 +16,6 @@
           titleColor:(UIColor *)titleColor
             forState:(UIControlState)state {
     
-    DDAssertCondition(image);
-    DDAssertCondition(title);
-    
     [self setImage:image forState:state];
     [self setTitle:title forState:state];
     

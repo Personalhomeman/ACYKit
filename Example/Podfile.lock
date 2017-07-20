@@ -1,18 +1,18 @@
 PODS:
-  - ACYKit (0.27.1):
-    - ACYKit/CategoryKit (= 0.27.1)
-    - ACYKit/Foundation (= 0.27.1)
-    - ACYKit/LogManager (= 0.27.1)
-    - ACYKit/UIKit (= 0.27.1)
-  - ACYKit/CategoryKit (0.27.1):
+  - ACYKit (0.27.2):
+    - ACYKit/CategoryKit (= 0.27.2)
+    - ACYKit/Foundation (= 0.27.2)
+    - ACYKit/LogManager (= 0.27.2)
+    - ACYKit/UIKit (= 0.27.2)
+  - ACYKit/CategoryKit (0.27.2):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - Aspects
-  - ACYKit/Foundation (0.27.1)
-  - ACYKit/LogManager (0.27.1):
+  - ACYKit/Foundation (0.27.2)
+  - ACYKit/LogManager (0.27.2):
     - ChameleonFramework
     - CocoaLumberjack
-  - ACYKit/UIKit (0.27.1):
+  - ACYKit/UIKit (0.27.2):
     - ACYKit/Foundation
     - ACYKit/LogManager
     - ChameleonFramework
@@ -62,7 +62,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACYKit: 1c1c5980a790198ade71bc8aadcf50d09b509a3c
+  ACYKit: 7dc8f9b3ac6da9b549d1f981fa162a352021f221
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
