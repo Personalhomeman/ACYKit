@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ACYKit'
-  s.version          = '0.29.0'
+  s.version          = '0.30.0'
   s.summary          = 'A library to start a project quickly for iOS developers.'
   s.description      = <<-DESC
   A library to start a project quickly for iOS developers which is written by Objective-C.
@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
     category.public_header_files = 'ACYKit/Classes/CategoryKit/**/*.h'
     category.dependency 'ACYKit/Foundation'
     category.dependency 'ACYKit/LogManager'
+    category.dependency 'ReactiveCocoa'
     category.dependency 'Aspects'
     category.frameworks = 'QuartzCore', 'CoreGraphics', 'AVFoundation', 'ImageIO'
   end

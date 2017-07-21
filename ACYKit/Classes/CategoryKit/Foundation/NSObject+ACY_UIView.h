@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)acy_bindAction:(SEL)action
             withTarget:(id)target;
 
+- (void)acy_bindAction:(void (^)(id x))action;
+
 @end
 
 NS_ASSUME_NONNULL_END
