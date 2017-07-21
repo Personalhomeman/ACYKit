@@ -10,7 +10,7 @@
 
 @implementation UIImage (ACY_UIColor)
 
-+ (instancetype)acy_imageFromColor:(UIColor *)color {
++ (instancetype)acy_imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
