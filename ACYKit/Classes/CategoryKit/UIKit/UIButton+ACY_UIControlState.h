@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (ACY_UIControlState)
 
-- (void)acy_setImage:(UIImage *)image
-               title:(NSString *)title
+- (void)acy_setImage:(nullable UIImage *)image
+     backgroundImage:(nullable UIImage *)backgroundImage
+               title:(nullable NSString *)title
           titleColor:(nullable UIColor *)titleColor
             forState:(UIControlState)state;
 

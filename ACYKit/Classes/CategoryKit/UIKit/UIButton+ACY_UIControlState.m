@@ -11,17 +11,17 @@
 
 @implementation UIButton (ACY_UIControlState)
 
-- (void)acy_setImage:(UIImage *)image
-               title:(NSString *)title
-          titleColor:(UIColor *)titleColor
+- (void)acy_setImage:(nullable UIImage *)image
+     backgroundImage:(nullable UIImage *)backgroundImage
+               title:(nullable NSString *)title
+          titleColor:(nullable UIColor *)titleColor
             forState:(UIControlState)state {
     
     [self setImage:image forState:state];
+    [self setBackgroundImage:backgroundImage forState:state];
     [self setTitle:title forState:state];
+    [self setTitleColor:titleColor forState:state];
     
-    if (titleColor) {
-        [self setTitleColor:titleColor forState:state];
-    }
 }
 
 @end
