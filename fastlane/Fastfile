@@ -1,0 +1,68 @@
+#!/usr/bin/ruby
+SCHEME      = "ACYKit"
+XCWORKSPACE = "#{SCHEME}.xcworkspace"
+XCODEPROJ   = "#{SCHEME}.xcodeproj"
+
+fastlane_version "2.53.1"
+
+default_platform :ios
+
+platform :ios do
+  
+############################################################
+##########################  TEST  ##########################
+############################################################
+
+  desc "Runs all the tests"
+  lane :test do |options|
+    env_ci = options[:env_ci]
+    travis = options[:travis]
+    scan(
+      scheme: SCHEME,
+      devices: "iPhone 7",
+      code_coverage: true
+    )
+    code_coverage(
+      env_ci: env_ci,
+      travis: travis
+    )
+  end
+
+############################################################
+#####################  CODE COVERAGE  ######################
+############################################################
+
+  desc "Run slather to generate a code coverage report"
+  lane :code_coverage do |options|
+    env_ci    = options[:env_ci]
+    travis    = options[:travis]
+    slather(
+      cobertura_xml: env_ci,
+      html: !env_ci,
+      show: !env_ci,
+      travis: travis,
+      source_files: "#{SCHEME}/#{SCHEME}/*",
+      output_directory: "fastlane/test_output/code_coverage/",
+      scheme: SCHEME,
+      workspace: XCWORKSPACE,
+      proj: XCODEPROJ,
+      ignore: [
+        "Pods/*"
+      ]
+    )
+  end
+
+############################################################
+#######################  TRAVIS-CI  ########################
+############################################################
+
+  desc "Run unit tests in travis-ci"
+  lane :test_in_travis do
+    cocoapods
+    test(
+      env_ci: true,
+      travis: true
+    )
+  end
+
+end

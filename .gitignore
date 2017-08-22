@@ -1,73 +1,17 @@
-
-# Created by https://www.gitignore.io/api/osx,xcode,git,carthage,fastlane,objective-c,swift
-
-### Carthage ###
-# Carthage - A simple, decentralized dependency manager for Cocoa
-Example/Carthage/Checkouts/
-Example/Carthage/Build/
+# Created by https://www.gitignore.io/api/osx,xcode,cocoapods,fastlane
+Pods/
 
 ### fastlane ###
-# fastlane - A streamlined workflow tool for Cocoa deployment
-
-# fastlane specific
-Example/fastlane/report.xml
+fastlane/report.xml
 
 # deliver temporary files
-Example/fastlane/Preview.html
+fastlane/Preview.html
 
 # snapshot generated screenshots
-Example/fastlane/screenshots/**/*.png
-Example/fastlane/screenshots/screenshots.html
+fastlane/screenshots
 
 # scan temporary files
-Example/fastlane/test_output
-
-### Git ###
-*.orig
-
-### Objective-C ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-Example/build/
-Example/DerivedData/
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-
-## Other
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
-
-## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
-
-# CocoaPods
-Example/Pods/
-
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
-
-### Objective-C Patch ###
-
+fastlane/test_output
 ### OSX ###
 *.DS_Store
 .AppleDouble
@@ -95,17 +39,23 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Swift ###
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
+### Xcode ###
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-Example/Packages/
-Example/Package.pins
-Example/.build/
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
 
 ### Xcode Patch ###
 *.xcodeproj/*
@@ -114,4 +64,5 @@ Example/.build/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-# End of https://www.gitignore.io/api/osx,xcode,git,carthage,fastlane,objective-c,swift
+# End of https://www.gitignore.io/api/osx,xcode,cocoapods,fastlane
+
