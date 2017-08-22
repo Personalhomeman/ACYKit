@@ -8,15 +8,15 @@ language: objective-c
 cache: 
     - bundler
     - cocoapods
-podfile: Example/Podfile
+podfile: Podfile
 install:
     - bundle install --without=documentation
-    - bundle exec pod install --project-directory=Example
+    - bundle exec pod install --project-directory=ACYKit
 script:
-    - cd Example
     - bundle exec fastlane test_in_travis
-    - cd ..
-    - pod lib lint
+    - pod lib lint --allow-warnings
 after_success: 
-    - bash <(curl -s https://codecov.io/bash) -f ./Example/fastlane/test_output/code_coverage/cobertura.xml
+    - bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/code_coverage/cobertura.xml
+
+
 
