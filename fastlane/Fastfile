@@ -1,9 +1,9 @@
-#!/usr/bin/ruby
+#!/usr/local/bin/ruby
 SCHEME      = "ACYKit"
 XCWORKSPACE = "#{SCHEME}.xcworkspace"
 XCODEPROJ   = "#{SCHEME}.xcodeproj"
 
-fastlane_version "2.53.1"
+fastlane_version "2.54.0"
 
 default_platform :ios
 
