@@ -6,8 +6,8 @@ machine:
 
 jobs: 
   build:
-    docker:
-      - image: circleci/ruby:2.4.1-node   
+    # docker:
+    #   - image: circleci/ruby:2.4.1-node   
     steps:
       - run:
           command: |
