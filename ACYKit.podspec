@@ -1,7 +1,7 @@
 #!usr/bin/ruby
 Pod::Spec.new do |s|
   s.name             = 'ACYKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A library to start a project quickly for iOS developers.'
   s.description      = <<-DESC
   A library to start a project quickly for iOS developers which is written by Objective-C.
