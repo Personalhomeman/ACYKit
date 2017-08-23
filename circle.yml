@@ -1,4 +1,9 @@
 version: 2
+
+machine:
+  xcode:
+    version: 8.3.3
+
 jobs: 
   build:
     docker:
