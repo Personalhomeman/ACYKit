@@ -1,20 +1,34 @@
 version: 2
 
-jobs: 
-  build:
-    machine:
+machine:
       xcode:
         version: 8.3.3
-    # docker:
-    #   - image: circleci/ruby:2.4.1-node   
-    steps:
-      - run:
-          command: |
-            bundle install --without=documentation
-            bundle exec pod install
-            bundle exec fastlane test_in_circleci
-            bundle exec pod lib lint --allow-warnings
 
-            bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/code_coverage/cobertura.xml
+test:
+  override:
+    - run:
+        command: |
+          bundle exec fastlane test_in_circleci
+          bundle exec pod lib lint --allow-warnings
+
+          bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/code_coverage/cobertura.xml
+
+
+# jobs: 
+#   build:
+#     machine:
+#       xcode:
+#         version: 8.3.3
+#     # docker:
+#     #   - image: circleci/ruby:2.4.1-node   
+#     steps:
+#       - run:
+#           command: |
+#             bundle install --without=documentation
+#             bundle exec pod install
+#             bundle exec fastlane test_in_circleci
+#             bundle exec pod lib lint --allow-warnings
+# 
+#             bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/code_coverage/cobertura.xml
     
 
