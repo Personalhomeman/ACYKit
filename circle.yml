@@ -6,7 +6,7 @@ jobs:
     steps:
       - run:
           command: |
-            bundle install --without-documentation
+            bundle install --without=documentation
             bundle exec pod install
             bundle exec fastlane test_in_circleci
             bundle exec pod lib lint --allow-warnings
