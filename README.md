@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-platform: iOS 8.0
+platform: iOS 9.0
 
 To use the pods, you need to install the [CocoaPods](http://cocoapods.org), the best way to install it is using [bundler](http://bundler.io). So run command in your command line:
 
@@ -47,7 +47,7 @@ pod "ACYKit"
 If you just want to use some sub pods, you can add lines like this:
 
 ```ruby
-pod 'ACYKit', :subspecs => ['LogManager', 'Foundation'], :git => 'git@github.com:archmagees/ACYKit.git
+pod 'ACYKit', :subspecs => ['ACYServiceLog', 'Core'], :git => 'git@github.com:archmagees/ACYKit.git
 ```
 
 ## Author
