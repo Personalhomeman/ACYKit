@@ -1,0 +1,16 @@
+version: 2
+jobs: 
+  build:
+    # docker:
+      # - image: circleci/xcode:8.3
+    steps:
+      - run:
+        command: |
+          bundle install --without-documentation
+          bundle exec pod install
+          bundle exec fastlane test_in_circleci
+          bundle exec pod lib lint --allow-warnings
+
+          bash <(curl -s https://codecov.io/bash) -f ./fastlane/test_output/code_coverage/cobertura.xml
+    
+

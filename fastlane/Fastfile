@@ -17,6 +17,7 @@ platform :ios do
   lane :test do |options|
     env_ci = options[:env_ci]
     travis = options[:travis]
+    circleci = options[:circleci]
     scan(
       scheme: SCHEME,
       devices: "iPhone 7",
@@ -24,7 +25,8 @@ platform :ios do
     )
     code_coverage(
       env_ci: env_ci,
-      travis: travis
+      travis: travis,
+      circleci: circleci
     )
   end
 
@@ -36,11 +38,13 @@ platform :ios do
   lane :code_coverage do |options|
     env_ci    = options[:env_ci]
     travis    = options[:travis]
+    circleci  = options[:circleci]
     slather(
       cobertura_xml: env_ci,
       html: !env_ci,
       show: !env_ci,
       travis: travis,
+      circleci: circleci,
       source_files: "#{SCHEME}/#{SCHEME}/*",
       output_directory: "fastlane/test_output/code_coverage/",
       scheme: SCHEME,
@@ -58,10 +62,18 @@ platform :ios do
 
   desc "Run unit tests in travis-ci"
   lane :test_in_travis do
-    cocoapods
+    # cocoapods
     test(
       env_ci: true,
       travis: true
+    )
+  end
+
+  desc "Run unit tests in circleci"
+  lane :test_in_circleci do
+    test(
+      env_ci: true,
+      circleci: true
     )
   end
 

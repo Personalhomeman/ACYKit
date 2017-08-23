@@ -45,6 +45,11 @@ Run slather to generate a code coverage report
 fastlane ios test_in_travis
 ```
 Run unit tests in travis-ci
+### ios test_in_circleci
+```
+fastlane ios test_in_circleci
+```
+Run unit tests in circleci
 
 ----
 
