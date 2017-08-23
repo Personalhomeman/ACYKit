@@ -40,16 +40,11 @@ Runs all the tests
 fastlane ios code_coverage
 ```
 Run slather to generate a code coverage report
-### ios test_in_travis
+### ios test_in_bitrise
 ```
-fastlane ios test_in_travis
+fastlane ios test_in_bitrise
 ```
-Run unit tests in travis-ci
-### ios test_in_circleci
-```
-fastlane ios test_in_circleci
-```
-Run unit tests in circleci
+Run unit tests in bitrise
 
 ----
 

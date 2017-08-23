@@ -1,6 +1,6 @@
 # ACYKit
 
-[![Build Status](https://travis-ci.org/archmagees/ACYKit.svg?branch=master)](https://travis-ci.org/archmagees/ACYKit)
+[![Build Status](https://www.bitrise.io/app/429993d68cdbb9b8/status.svg?token=XxLWJwSvyQTkJVs53Jbabw)](https://www.bitrise.io/app/429993d68cdbb9b8)
 [![codecov](https://codecov.io/gh/archmagees/ACYKit/branch/master/graph/badge.svg)](https://codecov.io/gh/archmagees/ACYKit)
 [![Version](https://img.shields.io/cocoapods/v/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
 [![License](https://img.shields.io/cocoapods/l/ACYKit.svg?style=flat)](http://cocoapods.org/pods/ACYKit)
