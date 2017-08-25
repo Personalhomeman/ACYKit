@@ -24,4 +24,12 @@
     
 }
 
+- (void)acy_setTitle:(nullable NSString *)title
+          titleColor:(nullable UIColor *)titleColor
+            forState:(UIControlState)state {
+    
+    [self setTitle:title forState:state];
+    [self setTitleColor:titleColor forState:state];
+}
+
 @end

@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
           titleColor:(nullable UIColor *)titleColor
             forState:(UIControlState)state;
 
+- (void)acy_setTitle:(nullable NSString *)title
+          titleColor:(nullable UIColor *)titleColor
+            forState:(UIControlState)state;
+
 @end
 
 NS_ASSUME_NONNULL_END
